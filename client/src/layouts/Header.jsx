@@ -54,7 +54,7 @@ export const Header = () => {
                     <img src={close} alt='close_icon' />
                   </div>
                 ) : (
-                  <div className='w-[.83rem]'>
+                  <div className='w-[.90rem]'>
                     <img src={arrow_down} alt='arrow_down_icon' />
                   </div>
                 )}

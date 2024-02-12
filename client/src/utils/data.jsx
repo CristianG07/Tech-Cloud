@@ -1,6 +1,16 @@
 // images
 import { facebook, instagram, mail, map, payments, phone, premium, truck, twitter } from '@/assets/images'
 
+export const tabsNav = [
+  { name: "All products" },
+  { name: "Best sellers" },
+  { name: "Mobile phones" },
+  { name: "Tablets" },
+  { name: "Laptops" },
+  { name: "Desktops" },
+  { name: "Accessories" }
+]
+
 export const cualities_footer = [
   {title: 'Fast delivery', text: 'Delivery up to 5 days', icon: truck},
   {title: 'Quick payment', text: 'Choose your payment method', icon: payments},

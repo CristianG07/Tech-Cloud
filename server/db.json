@@ -3,8 +3,8 @@
     {
       "id": "xMHCZl",
       "name": "Smartphone Apple iPhone 14 128GB",
-      "image": "../client/src/assets/images/smartphone14.svg",
-      "category": ["best seller", "mobile phones", "tablets", "laptops", "desktops", "accessories"],
+      "image": "https://raw.githubusercontent.com/CristianG07/Tech-Cloud/31a022820ec3a3c78036fc0f76c909fa0a793002/client/src/assets/images/smartphone14.svg",
+      "category": "best seller",
       "brand": "Apple",
       "rating_star": 4.4,
       "delivery": "Delivery in 3-5 days",
@@ -38,8 +38,8 @@
     {
       "id": "xaHrKZ",
       "name": "Smartphone Apple iPhone 15 516GB",
-      "image": "../client/src/assets/images/smartphone15.svg",
-      "category": ["best seller", "mobile phones", "tablets", "laptops", "desktops", "accessories"],
+      "image": "https://raw.githubusercontent.com/CristianG07/Tech-Cloud/31a022820ec3a3c78036fc0f76c909fa0a793002/client/src/assets/images/smartphone15.svg",
+      "category": "best seller",
       "brand": "Apple",
       "rating_star": 4.4,
       "delivery": "Delivery in 3-5 days",
@@ -74,8 +74,8 @@
     {
       "id": "dtfo9e",
       "name": "Smartphone Apple iPhone 14 128GB",
-      "image": "../client/src/assets/images/smartphone14.svg",
-      "category": ["best seller", "mobile phones", "tablets", "laptops", "desktops", "accessories"],
+      "image": "https://raw.githubusercontent.com/CristianG07/Tech-Cloud/31a022820ec3a3c78036fc0f76c909fa0a793002/client/src/assets/images/smartphone14.svg",
+      "category": "best seller",
       "brand": "Apple",
       "rating_star": 4.4,
       "delivery": "Delivery in 3-5 days",
@@ -109,8 +109,8 @@
     {
       "id": "fLroW6",
       "name": "Smartphone Apple iPhone 15 516GB",
-      "image": "../client/src/assets/images/smartphone15.svg",
-      "category": ["best seller", "mobile phones", "tablets", "laptops", "desktops", "accessories"],
+      "image": "https://raw.githubusercontent.com/CristianG07/Tech-Cloud/31a022820ec3a3c78036fc0f76c909fa0a793002/client/src/assets/images/smartphone15.svg",
+      "category": "best seller",
       "brand": "Apple",
       "rating_star": 4.4,
       "delivery": "Delivery in 3-5 days",
@@ -145,8 +145,360 @@
     {
       "id": "VwkN_o",
       "name": "Smartphone Apple iPhone 14 128GB",
-      "image": "../client/src/assets/images/smartphone14.svg",
-      "category": ["best seller", "mobile phones", "tablets", "laptops", "desktops", "accessories"],
+      "image": "https://raw.githubusercontent.com/CristianG07/Tech-Cloud/31a022820ec3a3c78036fc0f76c909fa0a793002/client/src/assets/images/smartphone14.svg",
+      "category": "best seller",
+      "brand": "Apple",
+      "rating_star": 4.4,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": "3 424,00",
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        {"screen_diagonal": 6.1},
+        {"memory": "128 GB"},
+        {"camera_megapixels": "12 MP + 12 MP"},
+        {"display_resolution": "2532x1170"},
+        {"network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G"},
+        {"matrix_type": "OLED (Super Retina XDR)"}
+      ]
+    },
+    {
+      "id": "xMHCaZl",
+      "name": "Smartphone Apple iPhone 14 128GB",
+      "image": "https://raw.githubusercontent.com/CristianG07/Tech-Cloud/31a022820ec3a3c78036fc0f76c909fa0a793002/client/src/assets/images/smartphone14.svg",
+      "category": "mobile phones",
+      "brand": "Apple",
+      "rating_star": 4.4,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": "3 424,00",
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        {"screen_diagonal": 6.1},
+        {"memory": "128 GB"},
+        {"camera_megapixels": "12 MP + 12 MP"},
+        {"display_resolution": "2532x1170"},
+        {"network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G"},
+        {"matrix_type": "OLED (Super Retina XDR)"}
+      ]
+    },
+
+    {
+      "id": "xRaHr",
+      "name": "Smartphone Apple iPhone 15 516GB",
+      "image": "https://raw.githubusercontent.com/CristianG07/Tech-Cloud/31a022820ec3a3c78036fc0f76c909fa0a793002/client/src/assets/images/smartphone15.svg",
+      "category": "mobile phones",
+      "brand": "Apple",
+      "rating_star": 4.4,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": "5 599,00",
+      "discounted_price": "6 599,00",
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        {"screen_diagonal": 6.1},
+        {"memory": "128 GB"},
+        {"camera_megapixels": "12 MP + 12 MP"},
+        {"display_resolution": "2532x1170"},
+        {"network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G"},
+        {"matrix_type": "OLED (Super Retina XDR)"}
+      ]
+    },
+
+    {
+      "id": "dAAWf_e",
+      "name": "Smartphone Apple iPhone 14 128GB",
+      "image": "https://raw.githubusercontent.com/CristianG07/Tech-Cloud/31a022820ec3a3c78036fc0f76c909fa0a793002/client/src/assets/images/smartphone14.svg",
+      "category": "mobile phones",
+      "brand": "Apple",
+      "rating_star": 4.4,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": "3 424,00",
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        {"screen_diagonal": 6.1},
+        {"memory": "128 GB"},
+        {"camera_megapixels": "12 MP + 12 MP"},
+        {"display_resolution": "2532x1170"},
+        {"network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G"},
+        {"matrix_type": "OLED (Super Retina XDR)"}
+      ]
+    },
+
+    {
+      "id": "fLASA26",
+      "name": "Smartphone Apple iPhone 15 516GB",
+      "image": "https://raw.githubusercontent.com/CristianG07/Tech-Cloud/31a022820ec3a3c78036fc0f76c909fa0a793002/client/src/assets/images/smartphone15.svg",
+      "category": "mobile phones",
+      "brand": "Apple",
+      "rating_star": 4.4,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": "5 599,00",
+      "discounted_price": "6 599,00",
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        {"screen_diagonal": 6.1},
+        {"memory": "128 GB"},
+        {"camera_megapixels": "12 MP + 12 MP"},
+        {"display_resolution": "2532x1170"},
+        {"network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G"},
+        {"matrix_type": "OLED (Super Retina XDR)"}
+      ]
+    },
+
+    {
+      "id": "PskN0o",
+      "name": "Smartphone Apple iPhone 14 128GB",
+      "image": "https://raw.githubusercontent.com/CristianG07/Tech-Cloud/31a022820ec3a3c78036fc0f76c909fa0a793002/client/src/assets/images/smartphone14.svg",
+      "category": "mobile phones",
+      "brand": "Apple",
+      "rating_star": 4.4,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": "3 424,00",
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        {"screen_diagonal": 6.1},
+        {"memory": "128 GB"},
+        {"camera_megapixels": "12 MP + 12 MP"},
+        {"display_resolution": "2532x1170"},
+        {"network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G"},
+        {"matrix_type": "OLED (Super Retina XDR)"}
+      ]
+    },
+    {
+      "id": "xMHasM6",
+      "name": "Smartphone Apple iPhone 14 128GB",
+      "image": "https://raw.githubusercontent.com/CristianG07/Tech-Cloud/31a022820ec3a3c78036fc0f76c909fa0a793002/client/src/assets/images/smartphone14.svg",
+      "category": "tablets",
+      "brand": "Apple",
+      "rating_star": 4.4,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": "3 424,00",
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        {"screen_diagonal": 6.1},
+        {"memory": "128 GB"},
+        {"camera_megapixels": "12 MP + 12 MP"},
+        {"display_resolution": "2532x1170"},
+        {"network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G"},
+        {"matrix_type": "OLED (Super Retina XDR)"}
+      ]
+    },
+
+    {
+      "id": "xaCAO",
+      "name": "Smartphone Apple iPhone 15 516GB",
+      "image": "https://raw.githubusercontent.com/CristianG07/Tech-Cloud/31a022820ec3a3c78036fc0f76c909fa0a793002/client/src/assets/images/smartphone15.svg",
+      "category": "tablets",
+      "brand": "Apple",
+      "rating_star": 4.4,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": "5 599,00",
+      "discounted_price": "6 599,00",
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        {"screen_diagonal": 6.1},
+        {"memory": "128 GB"},
+        {"camera_megapixels": "12 MP + 12 MP"},
+        {"display_resolution": "2532x1170"},
+        {"network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G"},
+        {"matrix_type": "OLED (Super Retina XDR)"}
+      ]
+    },
+
+    {
+      "id": "dTfZZ9e",
+      "name": "Smartphone Apple iPhone 14 128GB",
+      "image": "https://raw.githubusercontent.com/CristianG07/Tech-Cloud/31a022820ec3a3c78036fc0f76c909fa0a793002/client/src/assets/images/smartphone14.svg",
+      "category": "tablets",
+      "brand": "Apple",
+      "rating_star": 4.4,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": "3 424,00",
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        {"screen_diagonal": 6.1},
+        {"memory": "128 GB"},
+        {"camera_megapixels": "12 MP + 12 MP"},
+        {"display_resolution": "2532x1170"},
+        {"network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G"},
+        {"matrix_type": "OLED (Super Retina XDR)"}
+      ]
+    },
+
+    {
+      "id": "rASoK8",
+      "name": "Smartphone Apple iPhone 15 516GB",
+      "image": "https://raw.githubusercontent.com/CristianG07/Tech-Cloud/31a022820ec3a3c78036fc0f76c909fa0a793002/client/src/assets/images/smartphone15.svg",
+      "category": "tablets",
+      "brand": "Apple",
+      "rating_star": 4.4,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": "5 599,00",
+      "discounted_price": "6 599,00",
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        {"screen_diagonal": 6.1},
+        {"memory": "128 GB"},
+        {"camera_megapixels": "12 MP + 12 MP"},
+        {"display_resolution": "2532x1170"},
+        {"network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G"},
+        {"matrix_type": "OLED (Super Retina XDR)"}
+      ]
+    },
+
+    {
+      "id": "CwkSDN",
+      "name": "Smartphone Apple iPhone 14 128GB",
+      "image": "https://raw.githubusercontent.com/CristianG07/Tech-Cloud/31a022820ec3a3c78036fc0f76c909fa0a793002/client/src/assets/images/smartphone14.svg",
+      "category": "tablets",
       "brand": "Apple",
       "rating_star": 4.4,
       "delivery": "Delivery in 3-5 days",

@@ -22,6 +22,7 @@ module.exports = {
         text_primary: "#212121",
         text_secondary: "#757575",
         card_gray: "#F3F4F7",
+        discounted_price: "#999292",
         accent_primary: "#607D8B",
         light_secondary: "#3F51B5",
         dark_primary: "#1F2E8E",

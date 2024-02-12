@@ -1,5 +1,4 @@
-export const Contact = (props) => {
-  const { text, icon } = props
+export const Contact = ({ text, icon }) => {
 
   return (
     <div className='flex gap-2 items-center mt-2'>
