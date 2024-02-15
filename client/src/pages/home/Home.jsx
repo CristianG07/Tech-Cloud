@@ -1,26 +1,10 @@
-import axios from 'axios'
-import { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
 // components
 import { CategoryList } from '@/components/home/CategoryList'
 import { Title } from '@/components/home/Title'
-// slices
-import { addProducts, getAllProducts } from '@/redux/products/productSlice'
+import { useFetchProducts } from '@/hooks/useFetchProducts'
 
-export const Home = () => {
-  const dispatch = useDispatch()
-  const products = useSelector(getAllProducts)
-
-  const fetchProducts = async () => {
-    const response = await axios
-      .get('https://tech-cloud-api.vercel.app/products')
-      .catch((err) => console.log(err))
-    dispatch(addProducts(response.data))
-  }
-
-  useEffect(() => {
-    fetchProducts()
-  },[])
+const Home = () => {
+  const { products } = useFetchProducts('/products')
 
   return (
     <main className='w-[90%] lg:w-[70%] mx-auto py-20 text-pretty'>
@@ -92,3 +76,5 @@ export const Home = () => {
     </main>
   )
 }
+
+export default Home

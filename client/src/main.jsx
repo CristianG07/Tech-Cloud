@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 // Swiper styles
 import 'swiper/css'
-import 'swiper/css/navigation'
+import 'swiper/css/pagination';
 
 // redux
 import { Provider } from 'react-redux'

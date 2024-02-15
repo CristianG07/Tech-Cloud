@@ -7,6 +7,9 @@ import search from './search.svg'
 import heart_light from './heart-light.svg'
 import profile_light from './profile-light.svg'
 import information_circle from './information-circle.svg'
+import carbon_security from './carbon_security.svg'
+import light_payments from './light_payments-outline.svg'
+import light_truck from './tabler_truck-return.svg'
 import payments from './payments-outline.svg'
 import premium from './premium-outline.svg'
 import truck from './truck-return.svg'
@@ -35,5 +38,8 @@ export {
   twitter,
   phone,
   map,
-  mail
+  mail,
+  carbon_security,
+  light_payments,
+  light_truck
 }
