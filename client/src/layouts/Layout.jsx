@@ -3,20 +3,31 @@ import { Outlet } from 'react-router-dom'
 // components
 import { Footer } from './Footer'
 import { Header } from './Header'
-import { Suspense } from 'react'
+import { Suspense, useEffect } from 'react'
 import { Loader } from '@/components/loader/Loader'
+// utils
+import { STATUS } from '@/utils/status'
+import { fetchProducts } from '@/redux/products/productSlice'
+// redux
+import { useDispatch } from 'react-redux'
 
 export const Layout = () => {
-  const isLoading = useSelector((state) => state.showLoading)
-  console.log(isLoading)
-  if (isLoading) {
+  const dispatch = useDispatch()
+  const { status: productStatus } = useSelector((state) => state.product)
+
+  useEffect(() => {
+    dispatch(fetchProducts())
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  if (productStatus === STATUS.LOADING) {
     return (
       <>
         <Header />
         <Loader />
       </>
     )
-  } 
+  }
 
   return (
     <>

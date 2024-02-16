@@ -3,36 +3,14 @@ import { Routes, Route} from 'react-router-dom'
 // layout
 import { Layout } from './layouts/Layout'
 // utils
-import { wait } from './utils/wait'
+// import { wait } from './utils/wait'
 // pages
 import { CategoryPage } from './pages/category/CategoryPage'
 import Home from './pages/home/Home'
-const SinglePage = lazy(() => wait(1000).then(() => import('./pages/single/SinglePage')))
-// axios
-import axios from 'axios'
-// redux
-import { useDispatch } from 'react-redux'
-// slices
-import { addProducts, setLoading } from '@/redux/products/productSlice'
+import SinglePage from './pages/single/SinglePage'
+// const SinglePage = lazy(() => wait(1000).then(() => import('./pages/single/SinglePage')))
 
 function App() {
-  const base_url = 'https://tech-cloud-api.vercel.app'
-  const dispatch = useDispatch()
-
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const response = await axios.get(`${base_url}/products`);
-        dispatch(addProducts(response.data))
-      } catch (error) {
-        console.log(error)
-      } finally {
-        wait(1000).then(() => dispatch(setLoading(false)))
-      }
-    }
-
-    fetchProducts()
-  }, [])
 
   return (
     <>

@@ -29,10 +29,10 @@ export const ImageSlide = ({ image }) => {
         </div>
       </SwiperSlide>
       <div className='absolute top-0 flex justify-between items-center w-full h-full'>
-        <div className='z-10'>
+        <div>
           <SlidePrevButton />
         </div>
-        <div className='z-10'>
+        <div>
           <SlideNextButton />
         </div>
       </div>

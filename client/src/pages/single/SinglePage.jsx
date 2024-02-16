@@ -4,8 +4,7 @@ import { Product } from '@/components/singlePage/Product'
 
 const SinglePage = () => {
   const { productId } = useParams()
-  const products = useSelector((state) => state.products)
-  console.log(products)
+  const { data: products } = useSelector((state) => state.product)
 
   return (
     <section>

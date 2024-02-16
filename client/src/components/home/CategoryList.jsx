@@ -1,15 +1,17 @@
-import { FaRegHeart } from 'react-icons/fa'
 import { useNavigate } from 'react-router-dom'
+// redux}
+import { ButtonFavorite } from '../ui/ButtonFavorite';
 
-export const CategoryList = ({ id, image, name,actual_price, discounted_price }) => {
+export const CategoryList = ( product ) => {
+  const { id, image, name,actual_price, discounted_price } = product
   const navigate = useNavigate()
-
+  
   const handleClick = (productId) => {
     navigate(`/product/${productId}`)
   }
 
   return (
-    <div onClick={() => handleClick(id)} key={id} className='cursor-pointer'>
+    <div onClick={() => handleClick(id)} className='cursor-pointer'>
       <div>
         <img src={image} alt={name} loading='lazy' />
       </div>
@@ -26,8 +28,8 @@ export const CategoryList = ({ id, image, name,actual_price, discounted_price })
               </span>
             )}
           </div>
-          <div className='text-dark_primary'>
-            <FaRegHeart size={25} />
+          <div>
+            <ButtonFavorite {...product} />
           </div>
         </div>
       </div>
