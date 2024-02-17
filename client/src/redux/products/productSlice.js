@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit'
 import { STATUS } from '@/utils/status'
 import { BASE_URL } from '@/utils/apiURL'
 import { wait } from '@/utils/wait'
-// utils
+// axios
 import axios from 'axios'
 
 const initialState = {

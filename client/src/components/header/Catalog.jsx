@@ -14,7 +14,7 @@ export const Catalog = ({ toggle }) => {
     <section
       className={`${
         toggle ? 'block' : 'hidden'
-      } absolute top-full lg:left-0 lg:right-0 w-[90%] mx-auto max-w-xl lg:max-w-[90%] bg-card_gray shadow-lg rounded-b-xl lg:rounded-xl py-7 lg:py-16 transition-opacity duration-700 z-30`}
+      } container_catalog absolute top-full lg:left-0 lg:right-0 mx-auto lg:max-w-[90%] bg-card_gray shadow-lg rounded-b-xl lg:rounded-xl py-7 lg:py-16 transition-opacity duration-700 z-30`}
     >
       <div className='flex justify-center'>
         <div className='grid grid-cols-2 gap-10 md:gap-16 sm:grid lg:flex sm:grid-cols-3 w-[90%] lg:w-fit mx-auto'>

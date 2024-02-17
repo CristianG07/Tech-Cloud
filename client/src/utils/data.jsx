@@ -1,8 +1,7 @@
 // images
-import { facebook, instagram, mail, map, payments, phone, premium, truck, twitter } from '@/assets/images'
+import { cart_sidebar, facebook, heart_light_sidebar, information_circle_sidebar, instagram, mail, map, payments, phone, premium, truck, twitter } from '@/assets/images'
 
 export const tabsNav = [
-  { name: "All products" },
   { name: "Best sellers" },
   { name: "Mobile phones" },
   { name: "Tablets" },
@@ -21,6 +20,12 @@ export const links_socials = [
   {image: instagram, link: '/'},
   {image: facebook, link: '/'},
   {image: twitter, link: '/'},
+]
+
+export const sidebar = [
+  {text: 'Help Center', icon: information_circle_sidebar, link: '/'},
+  {text: 'Wish list', icon: heart_light_sidebar, link: '/'},
+  {text: 'Bucket', icon: cart_sidebar, link: '/'}
 ]
 
 export const contact_info = [

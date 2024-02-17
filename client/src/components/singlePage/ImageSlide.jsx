@@ -14,7 +14,7 @@ export const ImageSlide = ({ image }) => {
       className='relative'
     >
       <SwiperSlide>
-        <div className='p-8'>
+        <div className='p-10'>
           <img src={image} alt='' />
         </div>
       </SwiperSlide>
@@ -29,10 +29,10 @@ export const ImageSlide = ({ image }) => {
         </div>
       </SwiperSlide>
       <div className='absolute top-0 flex justify-between items-center w-full h-full'>
-        <div>
+        <div className='z-10'>
           <SlidePrevButton />
         </div>
-        <div>
+        <div className='z-10'>
           <SlideNextButton />
         </div>
       </div>

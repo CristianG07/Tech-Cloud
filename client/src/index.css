@@ -87,6 +87,10 @@ body {
   * {
     @apply border-border;
   }
+  html,
+  body {
+    @apply overflow-x-hidden;
+  }
   body {
     @apply bg-background text-foreground;
   }
@@ -106,6 +110,18 @@ body {
     @apply text-2xl mb-10 font-medium
   }
   .btn_show_all {
-    @apply flex justify-center items-center mt-6 lg:justify-start text-lg text-dark_primary font-semibold underline
+    @apply flex justify-center items-center mt-1 lg:justify-start text-lg text-dark_primary font-semibold underline
+  }
+  .tabs_categories {
+    @apply px-6 flex items-center h-full hover:bg-dark transition-all duration-700 text-lg lg:text-xl text-nowrap
+  }
+  .container_products {
+    @apply w-[90%] lg:w-[75%] mx-auto pb-20 pt-16 lg:pt-12
+  }
+  .content_products {
+    @apply grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8
+  }
+  .container_catalog {
+    @apply w-[88%] max-w-xl
   }
 }

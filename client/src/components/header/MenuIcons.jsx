@@ -9,7 +9,7 @@ import {
 // redux
 import { useSelector, useDispatch } from 'react-redux'
 
-export const MenuIcons = () => {
+export const MenuIcons = ({setIsSidebarOpen}) => {
   const { favorites } = useSelector((state) => state.favorite)
   
   return (
@@ -31,7 +31,7 @@ export const MenuIcons = () => {
       <button className='show_lg w-8'>
         <img src={information_circle} alt='information_circle_icons' />
       </button>
-      <button className='block lg:hidden w-8'>
+      <button onClick={() => setIsSidebarOpen((prev) => !prev)} className='block lg:hidden w-8'>
         <img src={bars} alt='bars_icons' />
       </button>
     </div>

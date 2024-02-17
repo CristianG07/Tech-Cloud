@@ -7,14 +7,12 @@ import { TabsCategories } from '@/components/header/TabsCategories'
 import { Catalog } from '@/components/header/Catalog'
 // ui
 import { Input } from '@/components/ui/input'
-import { Link } from 'react-router-dom'
-// import {
-//   Popover,
-//   PopoverContent,
-//   PopoverTrigger
-// } from '@/components/ui/popover'
+import { Link, useParams } from 'react-router-dom'
+import { SideBar } from '@/components/header/SideBar'
 
 export const Header = () => {
+  const { categoryName } = useParams()
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [toggle, setToggle] = useState(false)
 
   return (
@@ -38,14 +36,14 @@ export const Header = () => {
               Search
             </button>
           </div>
-          <div className='absolute lg:static flex justify-center top-full left-0 w-full lg:w-fit'>
+          <div className={`absolute lg:static flex justify-center top-full left-0 w-full lg:w-fit`}>
             <button
               onClick={() => setToggle(!toggle)}
               className={`${
                 toggle
                   ? 'bg-accent_primary hover:bg-accent_primary rounded-b-none lg:rounded-b-xl'
                   : 'bg-dark_primary hover:bg-dark_primary'
-              } relative flex items-center justify-center gap-3 w-[90%] max-w-xl lg:w-fit px-4 h-12 lg:h-10 text-white rounded-xl transition-colors duration-500`}
+              } container_catalog relative flex items-center justify-center gap-3 lg:w-fit px-4 h-12 lg:h-10 text-white rounded-xl transition-colors duration-500`}
             >
               Catalog
               <div>
@@ -63,9 +61,10 @@ export const Header = () => {
             <Catalog toggle={toggle} />
           </div>
         </div>
-        <MenuIcons />
+        <MenuIcons setIsSidebarOpen={setIsSidebarOpen} />
       </div>
       <TabsCategories />
+      <SideBar isSidebarOpen={isSidebarOpen} />
     </header>
   )
 }

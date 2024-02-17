@@ -1,20 +1,37 @@
 import { Link } from 'react-router-dom'
 // components
 import { ImageSlide } from './ImageSlide'
-import { FaHeart, FaRegHeart } from 'react-icons/fa'
 import { carbon_security, light_payments, light_truck } from '@/assets/images'
 import { InputSelect } from './InputSelect'
 import { Description } from './Description'
 import { Details } from './Details'
 import { StarRating } from './StarRating'
 import { ButtonFavorite } from '../ui/ButtonFavorite'
+import { useEffect } from 'react'
 
-export const Product = ( product ) => {
-  const { category, brand, image, name, actual_price, delivery, guarantee, payment_methods, description, product_details, rating_star } = product
+const Product = (product) => {
+  const {
+    category,
+    brand,
+    image,
+    name,
+    actual_price,
+    discounted_price,
+    delivery,
+    guarantee,
+    payment_methods,
+    description,
+    product_details,
+    rating_star
+  } = product
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
 
   return (
-    <section className='w-[90%] lg:w-[70%] mx-auto pb-20 pt-16'>
-      <div className='grid gap-16'>
+    <section className='container_products'>
+      <div className='grid gap-5'>
         <div className='flex justify-between items-center'>
           <div className='text-accent_primary capitalize flex gap-2'>
             <Link to='/'>Home</Link> /
@@ -38,9 +55,20 @@ export const Product = ( product ) => {
                 <span className='text-base'>Available</span>
                 <ButtonFavorite {...product} />
               </div>
-              <span className='text-2xl lg:text-3xl font-medium'>
-                {actual_price} zł
-              </span>
+              <div className='grid'>
+                <span
+                  className={`${
+                    discounted_price ? 'text-red-500' : ''
+                  } text-3xl font-semibold`}
+                >
+                  {actual_price} zł
+                </span>
+                {discounted_price && (
+                  <span className='text-discounted_price text-2xl line-through font-semibold'>
+                    {discounted_price} zł
+                  </span>
+                )}
+              </div>
               <button className='bg-dark_primary py-3 rounded-lg text-white text-base'>
                 Add to card +
               </button>
@@ -67,16 +95,20 @@ export const Product = ( product ) => {
             </div>
           </div>
         </div>
-        <div>
-          <Description {...description}/>
-        </div>
-        <div>
-          <Details {...product_details} />
-        </div>
-        <div>
-          <StarRating rating_star={rating_star} />
+        <div className='grid gap-20'>
+          <div>
+            <Description {...description} />
+          </div>
+          <div>
+            <Details {...product_details} />
+          </div>
+          <div>
+            <StarRating rating_star={rating_star} />
+          </div>
         </div>
       </div>
     </section>
   )
 }
+
+export default Product
