@@ -12,13 +12,13 @@ export const SideBar = ({ isSidebarOpen, setIsSidebarOpen }) => {
   return (
     <div>
       <div
-        className={`lg:hidden z-30 rounded-b-2xl shadow-lg ${
-          isSidebarOpen ? 'absolute translate-x-0' : 'fixed translate-x-full'
-        } calc_header w-[95%] max-w-full sm:max-w-[350px] transform transition duration-300 ease-in-out right-0`}
+        className={`fixed lg:hidden z-30 rounded-b-2xl shadow-lg ${
+          isSidebarOpen ? 'absolute right-0' : '-right-full'
+        } calc_header w-[95%] max-w-full sm:max-w-[350px] duration-200 ease-linear`}
       >
         <div className='relative flex justify-center items-center gap-6 bg-dark_primary px-12 py-5 text-white'>
           <div className='w-10 h-10'>
-            <img src={profile_light_white} alt='' />
+            <img src={profile_light_white} alt='profile_light_white' />
           </div>
           <div className='flex text-lg text-nowrap text-black'>
             <button className='pr-3 text-white'>Log in</button>
@@ -31,7 +31,7 @@ export const SideBar = ({ isSidebarOpen, setIsSidebarOpen }) => {
             {sidebar.map((item, i) => (
               <Link onClick={() => setIsSidebarOpen(false)} to={item.link} key={i} className='flex items-center gap-4'>
                 <div>
-                  <img src={item.icon} alt='' />
+                  <img src={item.icon} alt={item.text} />
                 </div>
                 <p>{item.text}</p>
               </Link>
