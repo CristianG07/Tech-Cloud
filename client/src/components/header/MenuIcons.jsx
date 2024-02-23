@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import OutsideClickHandler from 'react-outside-click-handler'
 // images
 import {
@@ -11,15 +12,26 @@ import {
 // redux
 import { useSelector } from 'react-redux'
 // components
-import { PopUpLogin } from './PopUpLogin'
-import { Link } from 'react-router-dom'
 import { SideBar } from './SideBar'
+import PopUpLoginMobile from './PopUpLoginMobile'
+import { PopUpSignUpMobile } from './PopUpSignUpMobile'
+import { PopUpLogin } from './PopUpLogin'
 
-export const MenuIcons = () => {
-  const [openLogin, setOpenLogin] = useState(false)
+export const MenuIcons = ({ props }) => {
+  const {
+    openLogin,
+    setOpenLogin,
+    setOpenSignUp,
+    openLoginMobile,
+    setOpenLoginMobile,
+    openSignUpMobile,
+    setOpenSignUpMobile,
+    isSidebarOpen,
+    setIsSidebarOpen
+  } = props
+
   const { favorites } = useSelector((state) => state.favorite)
   const { data: totalItems } = useSelector((state) => state.cart)
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false)
 
   return (
     <div className='flex items-center gap-2 lg:gap-6'>
@@ -39,14 +51,21 @@ export const MenuIcons = () => {
           </span>
         )}
       </Link>
-      <OutsideClickHandler onOutsideClick={() => setOpenLogin(false)}>
+      <OutsideClickHandler
+        onOutsideClick={() => {
+          setOpenLogin(false)
+          setOpenSignUp(false)
+        }}
+      >
         <button
           onClick={() => setOpenLogin(!openLogin)}
           className='show_lg w-8'
         >
           <img src={profile_light} alt='profile_light_icon' />
         </button>
-        <PopUpLogin openLogin={openLogin} setOpenLogin={setOpenLogin} />
+        <PopUpLogin props={{ openLogin, setOpenLogin }} />
+        <PopUpLoginMobile props={{ openLoginMobile, setOpenLoginMobile }} />
+        <PopUpSignUpMobile props={{ openSignUpMobile, setOpenSignUpMobile }} />
       </OutsideClickHandler>
       <Link to='/profile' className='show_lg w-8'>
         <img src={information_circle} alt='information_circle_icons' />
@@ -54,12 +73,21 @@ export const MenuIcons = () => {
 
       <OutsideClickHandler onOutsideClick={() => setIsSidebarOpen(false)}>
         <button
-          onClick={() => setIsSidebarOpen((prev) => !prev)}
+          onClick={() => setIsSidebarOpen(!isSidebarOpen)}
           className='block lg:hidden w-8'
         >
           <img src={bars} alt='bars_icons' />
         </button>
-        <SideBar isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} />
+        <SideBar
+          props={{
+            openLoginMobile,
+            setOpenLoginMobile,
+            openSignUpMobile,
+            setOpenSignUpMobile,
+            isSidebarOpen,
+            setIsSidebarOpen
+          }}
+        />
       </OutsideClickHandler>
     </div>
   )

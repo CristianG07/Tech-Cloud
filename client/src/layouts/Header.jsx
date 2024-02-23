@@ -12,6 +12,12 @@ import { Link } from 'react-router-dom'
 
 export const Header = () => {
   const [toggle, setToggle] = useState(false)
+  const [openLogin, setOpenLogin] = useState(false)
+  const [openSignUp, setOpenSignUp] = useState(false)
+  const [openLoginMobile, setOpenLoginMobile] = useState(false)
+  const [openSignUpMobile, setOpenSignUpMobile] = useState(false)
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false)
+
 
   return (
     <header className='relative bg-light_primary'>
@@ -65,10 +71,22 @@ export const Header = () => {
             </div>
           </div>
         </div>
-        <MenuIcons /> 
+        <MenuIcons
+          props={{
+            openLogin,
+            setOpenLogin,
+            openSignUp,
+            setOpenSignUp,
+            openLoginMobile,
+            setOpenLoginMobile,
+            openSignUpMobile,
+            setOpenSignUpMobile,
+            isSidebarOpen,
+            setIsSidebarOpen
+          }}
+        />
       </div>
       <TabsCategories />
     </header>
-
   )
 }

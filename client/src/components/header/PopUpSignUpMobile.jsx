@@ -6,11 +6,13 @@ import { IoIosClose } from 'react-icons/io'
 import { faceboo_icon, google } from '@/assets/images'
 import { Checkbox } from '../ui/checkbox'
 
-export const PopUpSignUpMobile = ({ openSignUp, setOpenSignUp, setOpenLogin }) => {
+export const PopUpSignUpMobile = ({props}) => {
+  const { openSignUpMobile, setOpenSignUpMobile } = props
+
   return (
     <section
-      className={`absolute -left-5 top-0 w-[calc(96.3vw)] sm:w-[390px] mx-auto bg-card_gray shadow-xl rounded-b-xl lg:rounded-xl px-14 py-14 z-30 transition-all duration-300 ${
-        openSignUp ? 'opacity-100 visible' : 'opacity-0 invisible'
+      className={`absolute left-0 right-0 calc_header sm:top-52 w-full sm:w-[390px] mx-auto bg-card_gray shadow-xl text-sm rounded-b-xl sm:rounded-xl px-14 py-14 z-30 transition-all duration-300 ${
+        openSignUpMobile ? 'opacity-100 visible' : 'opacity-0 invisible'
       }`}
     >
       <div className='space-y-5'>
@@ -19,8 +21,7 @@ export const PopUpSignUpMobile = ({ openSignUp, setOpenSignUp, setOpenLogin }) =
 
           <button
             onClick={() => {
-              setOpenSignUp(false)
-              setOpenLogin(false)
+              setOpenSignUpMobile(false)
             }}
             className='text-text_secondary'
           >
@@ -102,8 +103,7 @@ export const PopUpSignUpMobile = ({ openSignUp, setOpenSignUp, setOpenLogin }) =
             </span>
             <button
               onClick={() => {
-                setOpenLogin(true)
-                setOpenSignUp(false)
+                setOpenSignUpMobile(false)
               }}
               className='text-dark_primary underline underline-offset-1'
             >

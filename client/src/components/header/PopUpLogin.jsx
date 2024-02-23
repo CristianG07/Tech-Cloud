@@ -8,12 +8,13 @@ import OutsideClickHandler from 'react-outside-click-handler'
 import { PopUpSignUp } from './PopUpSignUp'
 import { useState } from 'react'
 
-export const PopUpLogin = ({ openLogin, setOpenLogin }) => {
+export const PopUpLogin = ({props}) => {
+  const { openLogin, setOpenLogin } = props
   const [openSignUp, setOpenSignUp] = useState(false)
 
   return (
     <section
-      className={`absolute left-0 right-0 top-56 w-[390px] mx-auto bg-card_gray shadow-xl rounded-b-xl lg:rounded-xl px-14 py-14 z-30 transition-all duration-300 ${
+      className={`absolute left-0 right-0 calc_header md:top-56 w-full md:w-[390px] mx-auto bg-card_gray shadow-xl rounded-b-xl lg:rounded-xl px-14 py-14 z-30 transition-all duration-300 ${
         openLogin ? 'opacity-100 visible' : 'opacity-0 invisible'
       }`}
     >

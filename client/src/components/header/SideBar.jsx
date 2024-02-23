@@ -2,17 +2,18 @@ import { profile_light_white } from '@/assets/images'
 import { links_footer, links_socials, sidebar } from '@/utils/data'
 import { Link } from 'react-router-dom'
 import { Socials } from '../footer/Socials'
-import OutsideClickHandler from 'react-outside-click-handler'
-import { useState } from 'react'
 
-export const SideBar = ({ isSidebarOpen, setIsSidebarOpen }) => {
-  const [openLogin, setOpenLogin] = useState(false)
-  const [openSignUp, setOpenSignUp] = useState(false)
-
+export const SideBar = ({ props }) => {
+  const {
+    setOpenLoginMobile,
+    setOpenSignUpMobile,
+    isSidebarOpen,
+    setIsSidebarOpen
+  } = props
   return (
     <div>
       <div
-        className={`fixed lg:hidden z-30 rounded-b-2xl shadow-lg ${
+        className={`fixed lg:hidden z-20 rounded-b-2xl shadow-lg ${
           isSidebarOpen ? 'absolute right-0' : '-right-full'
         } calc_header w-[95%] max-w-full sm:max-w-[350px] duration-200 ease-linear`}
       >
@@ -21,15 +22,36 @@ export const SideBar = ({ isSidebarOpen, setIsSidebarOpen }) => {
             <img src={profile_light_white} alt='profile_light_white' />
           </div>
           <div className='flex text-lg text-nowrap text-black'>
-            <button className='pr-3 text-white'>Log in</button>
+            <button
+              onClick={() => {
+                setOpenLoginMobile(true)
+                setIsSidebarOpen(false)
+              }}
+              className='pr-3 text-white'
+            >
+              Log in
+            </button>
             <div className='text-white'>|</div>
-            <button className='pl-3 text-white'>Sign up</button>
+            <button
+              onClick={() => {
+                setOpenSignUpMobile(true)
+                setIsSidebarOpen(false)
+              }}
+              className='pl-3 text-white'
+            >
+              Sign up
+            </button>
           </div>
         </div>
         <div className='grid gap-6 bg-card_gray p-8 rounded-b-2xl'>
           <div className='grid gap-4'>
             {sidebar.map((item, i) => (
-              <Link onClick={() => setIsSidebarOpen(false)} to={item.link} key={i} className='flex items-center gap-4'>
+              <Link
+                onClick={() => setIsSidebarOpen(false)}
+                to={item.link}
+                key={i}
+                className='flex items-center gap-4'
+              >
                 <div>
                   <img src={item.icon} alt={item.text} />
                 </div>
@@ -47,7 +69,9 @@ export const SideBar = ({ isSidebarOpen, setIsSidebarOpen }) => {
           <div className='grid gap-3 text-text_secondary text-sm'>
             {links_footer.map((nav, i) => (
               <div key={i}>
-                <Link onClick={() => setIsSidebarOpen(false)} to={nav.link}>{nav.text}</Link>
+                <Link onClick={() => setIsSidebarOpen(false)} to={nav.link}>
+                  {nav.text}
+                </Link>
               </div>
             ))}
           </div>

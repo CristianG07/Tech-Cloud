@@ -9,7 +9,7 @@ import { Checkbox } from '../ui/checkbox'
 export const PopUpSignUp = ({ openSignUp, setOpenSignUp, setOpenLogin }) => {
   return (
     <section
-      className={`absolute left-0 right-0 top-0 w-[390px] mx-auto bg-card_gray shadow-xl rounded-b-xl lg:rounded-xl px-14 py-14 z-30 transition-all duration-300 ${
+      className={`absolute left-0 right-0 lg:top-0 calc_header w-full md:w-[390px] mx-auto bg-card_gray shadow-xl rounded-b-xl lg:rounded-xl px-14 py-14 z-30 transition-all duration-300 ${
         openSignUp ? 'opacity-100 visible' : 'opacity-0 invisible'
       }`}
     >
