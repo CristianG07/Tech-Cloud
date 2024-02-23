@@ -49,6 +49,10 @@ const Product = (product) => {
     dispatch(addToCart(tempProduct));
   };  
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <section className='container_products pb-0'>
       <div className='grid gap-5'>
