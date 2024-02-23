@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import { CategoryList } from '@/components/home/CategoryList'
 import { Title } from '@/components/home/Title'
@@ -28,6 +28,10 @@ const Home = () => {
       [category]: prevState[category] + 5
     }))
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <main className='container_products max-w-7xl'>

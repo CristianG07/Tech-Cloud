@@ -4,8 +4,13 @@ import { InputForm } from '@/components/ui/InputForm'
 import { Button } from '@/components/ui/button'
 import { profile } from '@/utils/data'
 import { profile_blue } from '@/assets/images'
+import { useEffect } from 'react'
 
 function Profile() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <section className='container_products grid gap-10'>

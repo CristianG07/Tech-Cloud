@@ -6,6 +6,7 @@ import { InputForm } from '@/components/ui/InputForm'
 import { Button } from '@/components/ui/button'
 import { InputSelect } from '@/components/singlePage/InputSelect'
 import { Checkbox } from '@/components/ui/checkbox'
+import { useEffect } from 'react'
 
 const Basket = () => {
   const { data: products } = useSelector((state) => state.cart)
@@ -16,6 +17,10 @@ const Basket = () => {
       currency: 'PLN'
     }).format(price)
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   const totalAmount = products.reduce((total, product) => {
     const priceWithoutFormat = parseFloat(
