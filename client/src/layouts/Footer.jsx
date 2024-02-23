@@ -14,7 +14,7 @@ export const Footer = () => {
     <footer>
       {/* section 1 */}
       <section className='bg-accent_primary text-text_primary px-5'>
-        <div className='grid md:grid-cols-3 justify-center gap-y-10 md:gap-y-0 gap-5 lg:gap-20 mx-auto py-5'>
+        <div className='grid md:grid-cols-3 justify-center gap-y-10 md:gap-y-0 gap-5 lg:gap-20 mx-auto py-5 max-w-7xl'>
           {cualities_footer.map((cuality, i) => (
             <Cualities key={i} {...cuality} />
           ))}

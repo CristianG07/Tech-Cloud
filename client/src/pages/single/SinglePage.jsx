@@ -1,8 +1,6 @@
 import { useParams } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import Product from '@/components/singlePage/Product'
-// const Product = lazy(() => wait(1000).then(() => import('@/components/singlePage/Product')))
-
 
 const SinglePage = () => {
   const { productId } = useParams()

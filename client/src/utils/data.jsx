@@ -1,5 +1,5 @@
 // images
-import { cart_sidebar, facebook, heart_light_sidebar, information_circle_sidebar, instagram, mail, map, payments, phone, premium, truck, twitter } from '@/assets/images'
+import { cart_sidebar, eye, facebook, heart_light_sidebar, heart_profile, information_circle_sidebar, instagram, mail, map, payments, phone, premium, shopping_outline, tabler_list, truck, twitter } from '@/assets/images'
 
 export const tabsNav = [
   { name: "Best sellers" },
@@ -23,9 +23,16 @@ export const links_socials = [
 ]
 
 export const sidebar = [
-  {text: 'Help Center', icon: information_circle_sidebar, link: '/'},
+  {text: 'Help Center', icon: information_circle_sidebar, link: '/profile'},
   {text: 'Wish list', icon: heart_light_sidebar, link: '/'},
-  {text: 'Bucket', icon: cart_sidebar, link: '/'}
+  {text: 'Bucket', icon: cart_sidebar, link: '/basket'}
+]
+
+export const profile = [
+  {text: 'My orders', icon: tabler_list, link: '/'},
+  {text: 'My basket', icon: shopping_outline, link: '/basket'},
+  {text: 'Wish list', icon: heart_profile, link: '/'},
+  {text: 'Viewed products', icon: eye, link: '/'},
 ]
 
 export const contact_info = [

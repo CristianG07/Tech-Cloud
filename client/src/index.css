@@ -18,7 +18,15 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
 }
- 
+.calc_header {
+  top: calc(5rem + .01rem);
+}
+@media (min-width: 768px) {
+  .calc_header {
+    top: calc(6rem + .01rem);
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -87,12 +95,8 @@ body {
   * {
     @apply border-border;
   }
-  html,
   body {
-    @apply overflow-x-hidden;
-  }
-  body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground overflow-x-hidden;
   }
   img {
     @apply w-full object-cover
@@ -116,12 +120,15 @@ body {
     @apply px-6 flex items-center h-full hover:bg-dark transition-all duration-700 text-lg lg:text-xl text-nowrap
   }
   .container_products {
-    @apply w-[90%] lg:w-[75%] mx-auto pb-20 pt-16 lg:pt-12
+    @apply w-[90%] lg:w-[75%] max-w-7xl mx-auto pb-20 pt-16 lg:pt-12
   }
   .content_products {
     @apply grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8
   }
   .container_catalog {
     @apply w-[88%] max-w-xl
+  }
+  .grid_basket {
+    @apply grid grid-cols-1 sm:grid-cols-2 items-center gap-3 sm:gap-10
   }
 }

@@ -11,7 +11,7 @@ import {
 export const InputSelect = () => {
   return (
     <Select>
-      <SelectTrigger className='w-[180px] rounded-lg text-text_secondary'>
+      <SelectTrigger className={('rounded-xl text-text_secondary w-full mr-3')}>
         <SelectValue placeholder='Sort by popularity' />
       </SelectTrigger>
       <SelectContent>

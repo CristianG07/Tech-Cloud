@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import OutsideClickHandler from 'react-outside-click-handler'
 // images
 import { arrow_down, close, logo, search } from '@/assets/images'
 // components
@@ -7,17 +8,14 @@ import { TabsCategories } from '@/components/header/TabsCategories'
 import { Catalog } from '@/components/header/Catalog'
 // ui
 import { Input } from '@/components/ui/input'
-import { Link, useParams } from 'react-router-dom'
-import { SideBar } from '@/components/header/SideBar'
+import { Link } from 'react-router-dom'
 
 export const Header = () => {
-  const { categoryName } = useParams()
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [toggle, setToggle] = useState(false)
 
   return (
     <header className='relative bg-light_primary'>
-      <div className='w-[90%] h-[5rem] md:h-24 mx-auto flex items-center justify-between gap-4'>
+      <div className='w-[90%] h-[5rem] max-w-7xl md:h-24 mx-auto flex items-center justify-between gap-4'>
         <Link to='/' className='flex items-center gap-3'>
           <img src={logo} alt='logo' />
           <p className='hidden sm:block text-nowrap text-2xl'>tech cloud</p>
@@ -36,35 +34,41 @@ export const Header = () => {
               Search
             </button>
           </div>
-          <div className={`absolute lg:static flex justify-center top-full left-0 w-full lg:w-fit`}>
-            <button
-              onClick={() => setToggle(!toggle)}
-              className={`${
-                toggle
-                  ? 'bg-accent_primary hover:bg-accent_primary rounded-b-none lg:rounded-b-xl'
-                  : 'bg-dark_primary hover:bg-dark_primary'
-              } container_catalog relative flex items-center justify-center gap-3 lg:w-fit px-4 h-12 lg:h-10 text-white rounded-xl transition-colors duration-500`}
-            >
-              Catalog
-              <div>
-                {toggle ? (
-                  <div className='w-[1rem]'>
-                    <img src={close} alt='close_icon' />
+          <div
+            className={`absolute lg:static flex justify-center top-full left-0 w-full lg:w-fit`}
+          >
+            <div className='w-full'>
+              <OutsideClickHandler onOutsideClick={() => setToggle(false)}>
+                <button
+                  onClick={() => setToggle(!toggle)}
+                  className={`${
+                    toggle
+                      ? 'bg-accent_primary hover:bg-accent_primary rounded-b-none lg:rounded-b-xl'
+                      : 'bg-dark_primary hover:bg-dark_primary'
+                  } container_catalog relative top-0 flex items-center justify-center gap-3 lg:w-fit px-4 h-12 lg:h-10 text-white rounded-xl transition-colors duration-500 mx-auto`}
+                >
+                  Catalog
+                  <div>
+                    {toggle ? (
+                      <div className='w-[1rem]'>
+                        <img src={close} alt='close_icon' />
+                      </div>
+                    ) : (
+                      <div className='w-[.90rem]'>
+                        <img src={arrow_down} alt='arrow_down_icon' />
+                      </div>
+                    )}
                   </div>
-                ) : (
-                  <div className='w-[.90rem]'>
-                    <img src={arrow_down} alt='arrow_down_icon' />
-                  </div>
-                )}
-              </div>
-            </button>
-            <Catalog toggle={toggle} />
+                </button>
+                <Catalog toggle={toggle} />
+              </OutsideClickHandler>
+            </div>
           </div>
         </div>
-        <MenuIcons setIsSidebarOpen={setIsSidebarOpen} />
+        <MenuIcons /> 
       </div>
       <TabsCategories />
-      <SideBar isSidebarOpen={isSidebarOpen} />
     </header>
+
   )
 }

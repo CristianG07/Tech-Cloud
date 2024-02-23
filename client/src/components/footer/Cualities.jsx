@@ -1,5 +1,4 @@
-export const Cualities = (props) => {
-  const { title, text, icon } = props
+export const Cualities = ({ title, text, icon }) => {
 
   return (
     <div className='flex justify-normal md:justify-center items-center gap-4'>

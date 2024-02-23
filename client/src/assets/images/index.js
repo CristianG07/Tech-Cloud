@@ -24,8 +24,20 @@ import map from './map-pin.svg'
 import phone from './phone.svg'
 import mail from './mail.svg'
 import error from './error.png'
+import google from './google.svg'
+import faceboo_icon from './faceboo_icon.svg'
+import eye from './eye.svg'
+import heart_profile from './heart-light-profile.svg'
+import profile_blue from './profile-blue-light.svg'
+import shopping_outline from './shopping_outline.svg'
+import tabler_list from './tabler_list.svg'
 
 export {
+  tabler_list,
+  profile_blue,
+  eye,
+  heart_profile,
+  shopping_outline,
   logo,
   error,
   bars,
@@ -51,5 +63,7 @@ export {
   light_truck,
   cart_sidebar,
   heart_light_sidebar,
-  information_circle_sidebar
+  information_circle_sidebar,
+  google,
+  faceboo_icon
 }

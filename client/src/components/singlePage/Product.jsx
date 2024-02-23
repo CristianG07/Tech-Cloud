@@ -7,7 +7,18 @@ import { Description } from './Description'
 import { Details } from './Details'
 import { StarRating } from './StarRating'
 import { ButtonFavorite } from '../ui/ButtonFavorite'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
+// import { PopUpLogin } from '../header/PopUpLogin'
+import { PopupCart } from './PopupCart'
+import { Dialog, DialogContent, DialogTrigger } from '../ui/dialog'
+import { useDispatch, useSelector } from 'react-redux'
+import { addToCart } from '@/redux/products/cartSlice'
+// swiper
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Pagination } from 'swiper/modules'
+import { SlidePrevButton } from './SlidePrevButton'
+import { SlideNextButton } from './SlideNextButton'
+import { ProductSlide } from './ProductSlide'
 
 const Product = (product) => {
   const {
@@ -24,13 +35,22 @@ const Product = (product) => {
     product_details,
     rating_star
   } = product
+  const dispatch = useDispatch()
+  const [qty, setQty] = useState(1)
+  const { data: products } = useSelector((state) => state.product)
 
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, []);
+  const addToCartHandler = () => {
+    let newTotalPrice = actual_price
+    const tempProduct = {
+      ...product,
+      quantity: qty,
+      newTotalPrice
+    };
+    dispatch(addToCart(tempProduct));
+  };  
 
   return (
-    <section className='container_products'>
+    <section className='container_products pb-0'>
       <div className='grid gap-5'>
         <div className='flex justify-between items-center'>
           <div className='text-accent_primary capitalize flex gap-2'>
@@ -48,7 +68,7 @@ const Product = (product) => {
           </div>
           <div className='flex flex-col justify-center gap-10 md:gap-5 w-full max-w-md md:w-[69%] mx-auto text-pretty'>
             <div className='flex flex-col gap-5 mx-auto text-pretty'>
-              <h3 className='text-xl md:text-lg lg:text-xl font-medium'>
+              <h3 className='text-xl md:text-lg lg:text-2xl font-medium'>
                 {name}
               </h3>
               <div className='flex items-center justify-between text-dark_primary'>
@@ -58,7 +78,7 @@ const Product = (product) => {
               <div className='grid'>
                 <span
                   className={`${
-                    discounted_price ? 'text-red-500' : ''
+                    discounted_price && 'text-red-500'
                   } text-3xl font-semibold`}
                 >
                   {actual_price} zł
@@ -69,9 +89,19 @@ const Product = (product) => {
                   </span>
                 )}
               </div>
-              <button className='bg-dark_primary py-3 rounded-lg text-white text-base'>
-                Add to card +
-              </button>
+              <Dialog>
+                <DialogTrigger asChild>
+                  <button
+                    onClick={() => addToCartHandler(product)}
+                    className='bg-light_secondary py-3 rounded-lg text-white text-base w-full'
+                  >
+                    Add to card +
+                  </button>
+                </DialogTrigger>
+                <DialogContent className='w-[90%] px-5 py-8 md:px-12 md:py-14'>
+                  <PopupCart {...product} />
+                </DialogContent>
+              </Dialog>
             </div>
             <div className='grid gap-2 text-nowrap'>
               <p className='flex items-center gap-2 text-sm lg:text-base'>
@@ -106,6 +136,45 @@ const Product = (product) => {
             <StarRating rating_star={rating_star} />
           </div>
         </div>
+      </div>
+      <div className='my-10 md:mt-16'>
+        <h4 className='title_single_product mb-2'>You might be interested in</h4>
+        <Swiper
+          modules={[Navigation, Pagination]}
+          slidesPerView={2}
+          pagination={true}
+          breakpoints={{
+            // when window width is >= 640px
+            640: {
+              slidesPerView: 3,
+            },
+            // when window width is >= 768px
+            768: {
+              slidesPerView: 4,
+            },
+            // when window width is >= 960px
+            960: {
+              slidesPerView: 5,
+              pagination: false
+            }
+          }}
+          loop={true}
+          speed={700}
+        >
+          {products
+            .filter((product) => product.category === category)
+            .map((product) => (
+              <SwiperSlide key={product.id}>
+                <ProductSlide {...product} />
+              </SwiperSlide>
+            ))}
+          <div className='hidden lg:block z-10 absolute top-[40%] -left-2.5'>
+            <SlidePrevButton />
+          </div>
+          <div className='hidden lg:block z-10 absolute top-[40%] -right-3'>
+            <SlideNextButton />
+          </div>
+        </Swiper>
       </div>
     </section>
   )

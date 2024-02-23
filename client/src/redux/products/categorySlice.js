@@ -24,15 +24,16 @@ export const { setCategories, setStatus } = categorySlice.actions
 export default categorySlice.reducer
 
 export const fetchProductsByCategory = (categoryName) => async (dispatch) => {
-  dispatch(setStatus(STATUS.LOADING)) // Actualiza el estado a LOADING
+  dispatch(setStatus(STATUS.LOADING))
   
   try {
     const response = await axios.get(
       `${BASE_URL}products/?category_like=${categoryName}`
     )
-    dispatch(setCategories(response.data)) // Actualiza el estado con los datos recibidos
-    wait(1000).then(() => dispatch(setStatus(STATUS.IDLE))) // Actualiza el estado a IDLE después de un segundo
+    dispatch(setCategories(response.data))
+    wait(1000).then(() => dispatch(setStatus(STATUS.IDLE)))
+    
   } catch (error) {
-    wait(1000).then(() => dispatch(setStatus(STATUS.ERROR))) // Actualiza el estado a ERROR después de un segundo si hay un error
+    wait(1000).then(() => dispatch(setStatus(STATUS.ERROR)))
   }
 }

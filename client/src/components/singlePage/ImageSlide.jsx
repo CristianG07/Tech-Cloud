@@ -1,15 +1,21 @@
 // swiper
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination } from 'swiper/modules'
+import { Pagination } from 'swiper/modules'
 import { SlidePrevButton } from './SlidePrevButton'
 import { SlideNextButton } from './SlideNextButton'
 
 export const ImageSlide = ({ image }) => {
   return (
     <Swiper
-      modules={[Navigation, Pagination]}
+      modules={[Pagination]}
       loop={true}
       pagination={true}
+      breakpoints={{
+        // when window width is >= 768px
+        768: {
+          pagination: false
+        }
+      }}
       speed={700}
       className='relative'
     >
@@ -28,7 +34,7 @@ export const ImageSlide = ({ image }) => {
           <img src={image} alt='' />
         </div>
       </SwiperSlide>
-      <div className='absolute top-0 flex justify-between items-center w-full h-full'>
+      <div className='hidden absolute top-0 md:flex justify-between items-center w-full h-full'>
         <div className='z-10'>
           <SlidePrevButton />
         </div>

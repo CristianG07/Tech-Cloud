@@ -18,8 +18,9 @@ export const StarRating = ({ rating_star }) => {
   return (
     <>
       <div>
-        <h4 className='title_single_product mb-3'>Product details</h4>
+        <h4 className='title_single_product mb-3'>Rate the product</h4>
         <div className='flex gap-5 text-dark_primary'>{star}</div>
+        <button className='text-light_secondary underline underline-offset-2 mt-3'>Leave the review</button>
       </div>
     </>
   )

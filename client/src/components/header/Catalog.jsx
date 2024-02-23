@@ -1,6 +1,4 @@
-// components
 import { Categories } from './Categories'
-// data
 import {
   Accessories,
   desktops,
@@ -12,12 +10,10 @@ import {
 export const Catalog = ({ toggle }) => {
   return (
     <section
-      className={`${
-        toggle ? 'block' : 'hidden'
-      } container_catalog absolute top-full lg:left-0 lg:right-0 mx-auto lg:max-w-[90%] bg-card_gray shadow-lg rounded-b-xl lg:rounded-xl py-7 lg:py-16 transition-opacity duration-700 z-30`}
+      className={`container_catalog absolute top-full right-0 left-0 mx-auto lg:max-w-[1140px] bg-card_gray shadow-lg rounded-b-xl lg:rounded-xl pt-7 pb-12 lg:py-14 z-30 transition-all duration-300 ${toggle ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
     >
       <div className='flex justify-center'>
-        <div className='grid grid-cols-2 gap-10 md:gap-16 sm:grid lg:flex sm:grid-cols-3 w-[90%] lg:w-fit mx-auto'>
+        <div className='grid grid-cols-2 gap-10 md:gap-14 lg:gap-16 sm:grid lg:flex sm:grid-cols-3 w-[90%] lg:w-fit mx-auto'>
           <div className='grid gap-2'>
             <h4 className='title_categories text-nowrap'>Mobile phones</h4>
             {mobile_phones.map((item, i) => (

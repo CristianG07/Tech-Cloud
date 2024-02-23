@@ -1,4 +1,4 @@
-import { Link, NavLink, useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { tabsNav } from '@/utils/data';
 import { useDispatch } from 'react-redux'
 import { fetchProductsByCategory } from '@/redux/products/categorySlice';
@@ -16,7 +16,7 @@ export const TabsCategories = () => {
   
 
   return (
-    <nav className='show_lg lg:flex justify-center bg-accent_primary text-white h-16'>
+    <nav className='show_lg lg:flex justify-center bg-accent_primary text-white h-14'>
       <div className='flex items-center h-full'>
         <Link
           exact='true'

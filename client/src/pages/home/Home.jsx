@@ -30,7 +30,7 @@ const Home = () => {
   }
 
   return (
-    <main className='container_products'>
+    <main className='container_products max-w-7xl'>
       <section className='hidden lg:grid content_products'>
         {products.slice(0, numToShow).map((product) => (
           <CategoryList key={product.id} {...product} />
