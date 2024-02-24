@@ -25,13 +25,15 @@ const storeInLocalStorage = (data) => {
   }
 }
 
+const initialState = {
+  data: fetchFromLocalStorage(),
+  totalItems: 0,
+  totalAmount: 0
+}
+
 const cartSlice = createSlice({
   name: 'cart',
-  initialState: {
-    data: fetchFromLocalStorage(),
-    totalItems: 0,
-    totalAmount: 0
-  },
+  initialState,
   reducers: {
     addToCart(state, action) {
       const tempItem = state.data.find((item) => item.id === action.payload.id)

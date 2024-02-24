@@ -8,16 +8,30 @@ import { TabsCategories } from '@/components/header/TabsCategories'
 import { Catalog } from '@/components/header/Catalog'
 // ui
 import { Input } from '@/components/ui/input'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 export const Header = () => {
+  const navigate = useNavigate()
   const [toggle, setToggle] = useState(false)
   const [openLogin, setOpenLogin] = useState(false)
   const [openSignUp, setOpenSignUp] = useState(false)
   const [openLoginMobile, setOpenLoginMobile] = useState(false)
   const [openSignUpMobile, setOpenSignUpMobile] = useState(false)
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
+  const [searchProducts, setSearchProducts] = useState('')
 
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      performSearch()
+    }
+  }
+
+  const performSearch = () => {
+    if (searchProducts.trim() === '') return
+
+    setSearchProducts('')
+    navigate(`/search/${searchProducts}`)
+  }
 
   return (
     <header className='relative bg-light_primary'>
@@ -35,8 +49,14 @@ export const Header = () => {
               type='text'
               className='lg:rounded-r-none'
               placeholder='What are you looking for?'
+              value={searchProducts}
+              onKeyPress={handleKeyPress}
+              onChange={(e) => setSearchProducts(e.target.value)}
             />
-            <button className='hidden lg:block absolute h-full px-5 rounded-r-xl text-white text-sm font-medium left-full bg-light_secondary hover:bg-light_secondary/85 duration-500'>
+            <button
+              onClick={performSearch}
+              className='hidden lg:block absolute h-full px-5 rounded-r-xl text-white text-sm font-medium left-full bg-light_secondary hover:bg-light_secondary/85 duration-500'
+            >
               Search
             </button>
           </div>
@@ -66,7 +86,7 @@ export const Header = () => {
                     )}
                   </div>
                 </button>
-                <Catalog toggle={toggle} />
+                <Catalog props={{ toggle, setToggle }} />
               </OutsideClickHandler>
             </div>
           </div>

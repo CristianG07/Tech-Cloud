@@ -58,41 +58,41 @@ export const links_footer2 = [
 ]
 
 export const mobile_phones = [
-  { text: 'Apple', link: '/'},
-  { text: 'Samsung', link: '/'},
-  { text: 'Motorola', link: '/'},
-  { text: 'Xiaomi', link: '/'},
-  { text: 'Oppo', link: '/'},
+  { text: 'Apple', link: '/Apple'},
+  { text: 'Samsung', link: '/Samsung'},
+  { text: 'Motorola', link: '/Motorola'},
+  { text: 'Xiaomi', link: '/Xiaomi'},
+  { text: 'Oppo', link: '/Oppo'},
 ]
 
 export const tablets = [
-  { text: 'Apple', link: '/'},
-  { text: 'Samsung', link: '/'},
-  { text: 'Lenovo', link: '/'},
-  { text: 'Xiaomi', link: '/'},
-  { text: 'LG', link: '/'},
+  { text: 'Apple', link: '/Apple'},
+  { text: 'Samsung', link: '/Samsung'},
+  { text: 'Lenovo', link: '/Lenovo'},
+  { text: 'Xiaomi', link: '/Xiaomi'},
+  { text: 'LG', link: '/LG'},
 ]
 
 export const laptops = [
-  { text: 'Apple', link: '/'},
-  { text: 'HP', link: '/'},
-  { text: 'Lenovo', link: '/'},
-  { text: 'Dell', link: '/'},
-  { text: 'ASUS', link: '/'},
+  { text: 'Apple', link: '/Apple'},
+  { text: 'HP', link: '/HP'},
+  { text: 'Lenovo', link: '/Lenovo'},
+  { text: 'Dell', link: '/Dell'},
+  { text: 'ASUS', link: '/ASUS'},
 ]
 
 export const desktops = [
-  { text: 'Monitors', link: '/'},
-  { text: 'Keyboards and mouses', link: '/'},
-  { text: 'Loudspeakers', link: '/'},
-  { text: 'Computer softwares', link: '/'},
-  { text: 'Adapters', link: '/'},
+  { text: 'Monitors', link: '/Monitors'},
+  { text: 'Keyboards and mouses', link: '/Keyboards and mouses'},
+  { text: 'Loud speakers', link: '/Loud speakers'},
+  { text: 'Computer softwares', link: '/Computer softwares'},
+  { text: 'Adapters', link: '/Adapters'},
 ]
 
 export const Accessories = [
-  { text: 'Protective glasses', link: '/'},
-  { text: 'Cases and covers', link: '/'},
-  { text: 'Chargers', link: '/'},
-  { text: 'Headphones', link: '/'},
-  { text: 'Cables and adapters', link: '/'},
+  { text: 'Protective glasses', link: '/Protective glasses'},
+  { text: 'Cases and covers', link: '/Cases and covers'},
+  { text: 'Chargers', link: '/Chargers'},
+  { text: 'Head phones', link: '/Head phones'},
+  { text: 'Cables and adapters', link: '/Cables and adapters'},
 ]

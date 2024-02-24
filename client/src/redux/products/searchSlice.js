@@ -9,11 +9,11 @@ const initialState = {
   status: STATUS.IDLE
 }
 
-export const categorySlice = createSlice({
-  name: 'category',
+export const searchSlice = createSlice({
+  name: 'search',
   initialState,
   reducers: {
-    setCategories: (state, action) => {
+    setSearch: (state, action) => {
       state.data = action.payload
     },
     setStatus: (state, { payload }) => {
@@ -22,17 +22,17 @@ export const categorySlice = createSlice({
   }
 })
 
-export const { setCategories, setStatus } = categorySlice.actions
-export default categorySlice.reducer
+export const { setSearch, setStatus } = searchSlice.actions
+export default searchSlice.reducer
 
-export const fetchProductsByCategory = (categoryName) => async (dispatch) => {
+export const fetchProductsBySearch = (searchName) => async (dispatch) => {
   dispatch(setStatus(STATUS.LOADING))
   
   try {
     const response = await axios.get(
-      `${BASE_URL}products/?category_like=${categoryName}`
+      `${BASE_URL}products/?name_like=${searchName}`
     )
-    dispatch(setCategories(response.data))
+    dispatch(setSearch(response.data))
     wait(1000).then(() => dispatch(setStatus(STATUS.IDLE)))
     
   } catch (error) {

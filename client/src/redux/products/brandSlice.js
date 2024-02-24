@@ -9,11 +9,11 @@ const initialState = {
   status: STATUS.IDLE
 }
 
-export const categorySlice = createSlice({
-  name: 'category',
+export const brandSlice = createSlice({
+  name: 'brand',
   initialState,
   reducers: {
-    setCategories: (state, action) => {
+    setBrand: (state, action) => {
       state.data = action.payload
     },
     setStatus: (state, { payload }) => {
@@ -22,17 +22,17 @@ export const categorySlice = createSlice({
   }
 })
 
-export const { setCategories, setStatus } = categorySlice.actions
-export default categorySlice.reducer
+export const { setBrand, setStatus } = brandSlice.actions
+export default brandSlice.reducer
 
-export const fetchProductsByCategory = (categoryName) => async (dispatch) => {
+export const fetchProductsByBrands = (brandName) => async (dispatch) => {
   dispatch(setStatus(STATUS.LOADING))
   
   try {
     const response = await axios.get(
-      `${BASE_URL}products/?category_like=${categoryName}`
+      `${BASE_URL}products/?brand_like=${brandName}`
     )
-    dispatch(setCategories(response.data))
+    dispatch(setBrand(response.data))
     wait(1000).then(() => dispatch(setStatus(STATUS.IDLE)))
     
   } catch (error) {
