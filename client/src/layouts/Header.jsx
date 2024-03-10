@@ -37,7 +37,9 @@ export const Header = () => {
     <header className='relative bg-light_primary'>
       <div className='w-[90%] h-[5rem] max-w-7xl md:h-24 mx-auto flex items-center justify-between gap-4'>
         <Link to='/' className='flex items-center gap-3'>
-          <img src={logo} alt='logo' />
+          <div>
+            <img src={logo} alt='logo' />
+          </div>
           <p className='hidden sm:block text-nowrap text-2xl'>tech cloud</p>
         </Link>
         <div className='flex items-center gap-24'>
