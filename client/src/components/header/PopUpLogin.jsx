@@ -6,23 +6,24 @@ import { faceboo_icon, google } from '@/assets/images'
 import { Button } from '../ui/button'
 import OutsideClickHandler from 'react-outside-click-handler'
 import { PopUpSignUp } from './PopUpSignUp'
-import { useState } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { setOpenLogin, setOpenSingUp } from '@/redux/products/toggleSlice'
 
-export const PopUpLogin = ({props}) => {
-  const { openLogin, setOpenLogin } = props
-  const [openSignUp, setOpenSignUp] = useState(false)
+export const PopUpLogin = () => {
+  const dispatch = useDispatch()
+  const { isLoginOpen } = useSelector((state) => state.toggle)
 
   return (
     <section
       className={`absolute left-0 right-0 calc_header md:top-56 w-full md:w-[390px] mx-auto bg-card_gray shadow-xl rounded-b-xl lg:rounded-xl px-14 py-14 z-30 transition-all duration-300 ${
-        openLogin ? 'opacity-100 visible' : 'opacity-0 invisible'
+        isLoginOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
       }`}
     >
       <div className='space-y-6'>
         <div className='flex justify-between items-center'>
           <span className='text-xl'>Log in</span>
           <button
-            onClick={() => setOpenLogin(false)}
+            onClick={() => dispatch(setOpenLogin(false))}
             className='text-text_secondary'
           >
             <IoIosClose size={25} />
@@ -85,21 +86,16 @@ export const PopUpLogin = ({props}) => {
             <span className='text-accent_primary mr-1'>
               You don`t have an account?
             </span>
-            <OutsideClickHandler onOutsideClick={() => setOpenSignUp(false)}>
-              <button
-                onClick={() => {
-                  setOpenSignUp(true)
-                }}
-                className='text-dark_primary underline underline-offset-1'
-              >
-                Sign up
-              </button>
-              <PopUpSignUp
-                openSignUp={openSignUp}
-                setOpenSignUp={setOpenSignUp}
-                setOpenLogin={setOpenLogin}
-              />
-            </OutsideClickHandler>
+            <button
+              onClick={() => {
+                dispatch(setOpenSingUp(true))
+                dispatch(setOpenLogin(false))
+              }}
+              className='text-dark_primary underline underline-offset-1'
+            >
+              Sign up
+            </button>
+            <PopUpSignUp />
           </div>
         </div>
       </div>

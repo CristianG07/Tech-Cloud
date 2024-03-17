@@ -5,12 +5,17 @@ import { Label } from '../ui/label'
 import { IoIosClose } from 'react-icons/io'
 import { faceboo_icon, google } from '@/assets/images'
 import { Checkbox } from '../ui/checkbox'
+import { useSelector, useDispatch } from 'react-redux'
+import { setOpenLogin, setOpenSingUp } from '@/redux/products/toggleSlice'
 
-export const PopUpSignUp = ({ openSignUp, setOpenSignUp, setOpenLogin }) => {
+export const PopUpSignUp = () => {
+  const dispatch = useDispatch()
+  const { isSingUpOpen } = useSelector((state) => state.toggle)
+  
   return (
     <section
-      className={`absolute left-0 right-0 lg:top-0 calc_header w-full md:w-[390px] mx-auto bg-card_gray shadow-xl rounded-b-xl lg:rounded-xl px-14 py-14 z-30 transition-all duration-300 ${
-        openSignUp ? 'opacity-100 visible' : 'opacity-0 invisible'
+      className={`absolute left-0 right-0 calc_header md:top-56 w-full md:w-[390px] mx-auto bg-card_gray shadow-xl rounded-b-xl lg:rounded-xl px-14 py-14 z-30 transition-all duration-300 ${
+        isSingUpOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
       }`}
     >
       <div className='space-y-5'>
@@ -18,10 +23,7 @@ export const PopUpSignUp = ({ openSignUp, setOpenSignUp, setOpenLogin }) => {
           <span className='text-2xl'>Sign up</span>
 
           <button
-            onClick={() => {
-              setOpenSignUp(false)
-              setOpenLogin(false)
-            }}
+            onClick={() => dispatch(setOpenSingUp(false))}
             className='text-text_secondary'
           >
             <IoIosClose size={25} />
@@ -54,11 +56,7 @@ export const PopUpSignUp = ({ openSignUp, setOpenSignUp, setOpenLogin }) => {
             <div>
               <Label htmlFor='repeatpassword'>Repeat a password</Label>
               <div>
-                <InputForm
-                  name='repeatpassword'
-                  type='password'
-                  required
-                />
+                <InputForm name='repeatpassword' type='password' required />
               </div>
             </div>
             <div className='flex gap-3 mt-1'>
@@ -102,8 +100,8 @@ export const PopUpSignUp = ({ openSignUp, setOpenSignUp, setOpenLogin }) => {
             </span>
             <button
               onClick={() => {
-                setOpenLogin(true)
-                setOpenSignUp(false)
+                dispatch(setOpenLogin(true))
+                dispatch(setOpenSingUp(false))
               }}
               className='text-dark_primary underline underline-offset-1'
             >

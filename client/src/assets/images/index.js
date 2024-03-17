@@ -17,9 +17,6 @@ import light_truck from './tabler_truck-return.svg'
 import payments from './payments-outline.svg'
 import premium from './premium-outline.svg'
 import truck from './truck-return.svg'
-import instagram from './instagram.svg'
-import facebook from './facebook.svg'
-import twitter from './twitter.svg'
 import map from './map-pin.svg'
 import phone from './phone.svg'
 import mail from './mail.svg'
@@ -52,9 +49,6 @@ export {
   payments,
   premium,
   truck,
-  instagram,
-  facebook,
-  twitter,
   phone,
   map,
   mail,

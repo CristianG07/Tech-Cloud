@@ -4,25 +4,24 @@ import { Label } from '../ui/label'
 import { Link } from 'react-router-dom'
 import { faceboo_icon, google } from '@/assets/images'
 import { Button } from '../ui/button'
-import OutsideClickHandler from 'react-outside-click-handler'
-import { useState } from 'react'
-import { PopUpSignUpMobile } from './PopUpSignUpMobile'
+import { useDispatch, useSelector } from 'react-redux'
+import { setOpenLoginMobile, setOpenSingUpMobile } from '@/redux/products/toggleSlice'
 
-const PopUpLoginMobile = ({ props }) => {
-  const { openLoginMobile, setOpenLoginMobile } = props
-  const [openSignUp, setOpenSignUp] = useState(false)
-
+const PopUpLoginMobile = () => {
+  const dispatch = useDispatch()
+  const { isLoginMobileOpen } = useSelector((state) => state.toggle)
+  
   return (
     <section
-      className={`absolute left-0 right-0 calc_header sm:top-52 w-full sm:w-[390px] mx-auto bg-card_gray shadow-xl rounded-b-xl sm:rounded-xl px-14 py-14 text-sm z-30 transition-all duration-300 ${
-        openLoginMobile ? 'opacity-100 visible' : 'opacity-0 invisible'
+      className={`absolute left-0 right-0 calc_header sm:top-52 w-full sm:w-[390px] lg:hidden mx-auto bg-card_gray shadow-xl rounded-b-xl sm:rounded-xl px-14 py-14 text-sm z-30 transition-all duration-300 ${
+        isLoginMobileOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
       }`}
     >
       <div className='space-y-6'>
         <div className='flex justify-between items-center'>
-          <span className='text-xl'>Log in</span>
+          <span className='text-2xl'>Log in</span>
           <button
-            onClick={() => setOpenLoginMobile(false)}
+            onClick={() => dispatch(setOpenLoginMobile(false))}
             className='text-text_secondary'
           >
             <IoIosClose size={25} />
@@ -81,18 +80,19 @@ const PopUpLoginMobile = ({ props }) => {
               Facebook
             </Button>
           </div>
-          <div className='flex pt-4'>
+          <div className='flex justify-center pt-4'>
             <span className='text-accent_primary mr-1'>
               You don`t have an account?
             </span>
               <button
+                onClick={() => {
+                  dispatch(setOpenSingUpMobile(true))
+                  dispatch(setOpenLoginMobile(false))
+                }}
                 className='text-dark_primary underline underline-offset-1'
               >
                 Sign up
               </button>
-              {/* <PopUpSignUpMobile
-                props={{ openSignUp, setOpenSignUp, setOpenLoginMobile }}
-              /> */}
           </div>
         </div>
       </div>

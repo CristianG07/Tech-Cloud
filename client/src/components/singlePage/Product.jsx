@@ -46,7 +46,7 @@ const Product = (product) => {
       quantity: qty,
       newTotalPrice
     };
-    dispatch(addToCart(tempProduct));
+    dispatch(addToCart(tempProduct))
   };  
 
   useEffect(() => {

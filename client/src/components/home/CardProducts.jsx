@@ -1,8 +1,9 @@
-import { ButtonFavorite } from "../ui/ButtonFavorite"
+import { ButtonCart } from '../ui/ButtonCart'
+import { ButtonFavorite } from '../ui/ButtonFavorite'
 import { useNavigate } from 'react-router-dom'
 
 export const CardProducts = (product) => {
-  const { id, image, name,actual_price, discounted_price } = product
+  const { id, image, name, actual_price, discounted_price } = product
   const navigate = useNavigate()
 
   const handleClick = (productId) => {
@@ -12,13 +13,21 @@ export const CardProducts = (product) => {
   return (
     <div onClick={() => handleClick(id)} className='cursor-pointer'>
       <div>
-        <img src={image} alt={name} loading='lazy' />
+        <img
+          src={image}
+          alt={name}
+          // className='aspect-[46/51]'
+        />
       </div>
       <div className='grid gap-2 py-5'>
         <p className=''>{name}</p>
-        <div className='flex justify-between'>
+        <div className='flex gap-2 justify-between'>
           <div className='grid'>
-            <span className={`${discounted_price ? 'text-red-500' : ''} text-lg font-semibold`}>
+            <span
+              className={`${
+                discounted_price ? 'text-red-500' : ''
+              } text-lg text-nowrap font-semibold`}
+            >
               {actual_price} zł
             </span>
             {discounted_price && (
@@ -27,8 +36,13 @@ export const CardProducts = (product) => {
               </span>
             )}
           </div>
-          <div>
-            <ButtonFavorite {...product} />
+          <div className='flex gap-2'>
+            <div>
+              <ButtonCart {...product} />
+            </div>
+            <div>
+              <ButtonFavorite {...product} />
+            </div>
           </div>
         </div>
       </div>

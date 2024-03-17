@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import OutsideClickHandler from 'react-outside-click-handler'
 // images
@@ -10,26 +9,16 @@ import {
   profile_light
 } from '@/assets/images'
 // redux
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
+import { setOpenLogin, setOpenSidebar } from '@/redux/products/toggleSlice'
 // components
 import { SideBar } from './SideBar'
 import PopUpLoginMobile from './PopUpLoginMobile'
 import { PopUpSignUpMobile } from './PopUpSignUpMobile'
-import { PopUpLogin } from './PopUpLogin'
 
-export const MenuIcons = ({ props }) => {
-  const {
-    openLogin,
-    setOpenLogin,
-    setOpenSignUp,
-    openLoginMobile,
-    setOpenLoginMobile,
-    openSignUpMobile,
-    setOpenSignUpMobile,
-    isSidebarOpen,
-    setIsSidebarOpen
-  } = props
-
+export const MenuIcons = () => {
+  const dispatch = useDispatch()
+  const { isSidebarOpen, isLoginOpen } = useSelector((state) => state.toggle)
   const { favorites } = useSelector((state) => state.favorite)
   const { data: totalItems } = useSelector((state) => state.cart)
 
@@ -51,44 +40,30 @@ export const MenuIcons = ({ props }) => {
           </span>
         )}
       </Link>
-      <OutsideClickHandler
-        onOutsideClick={() => {
-          setOpenLogin(false)
-          setOpenSignUp(false)
+      <button
+        onClick={() => {
+          dispatch(setOpenLogin(!isLoginOpen))
         }}
+        className='show_lg w-8'
       >
-        <button
-          onClick={() => setOpenLogin(!openLogin)}
-          className='show_lg w-8'
-        >
-          <img src={profile_light} alt='profile_light_icon' />
-        </button>
-        <PopUpLogin props={{ openLogin, setOpenLogin }} />
-        <PopUpLoginMobile props={{ openLoginMobile, setOpenLoginMobile }} />
-        <PopUpSignUpMobile props={{ openSignUpMobile, setOpenSignUpMobile }} />
-      </OutsideClickHandler>
+        <img src={profile_light} alt='profile_light_icon' />
+      </button>
       <Link to='/profile' className='show_lg w-8'>
         <img src={information_circle} alt='information_circle_icons' />
       </Link>
-
-      <OutsideClickHandler onOutsideClick={() => setIsSidebarOpen(false)}>
+      <OutsideClickHandler
+        onOutsideClick={() => dispatch(setOpenSidebar(false))}
+      >
         <button
-          onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+          onClick={() => dispatch(setOpenSidebar(!isSidebarOpen))}
           className='block lg:hidden w-8'
         >
           <img src={bars} alt='bars_icons' />
         </button>
-        <SideBar
-          props={{
-            openLoginMobile,
-            setOpenLoginMobile,
-            openSignUpMobile,
-            setOpenSignUpMobile,
-            isSidebarOpen,
-            setIsSidebarOpen
-          }}
-        />
+        <SideBar />
       </OutsideClickHandler>
+      <PopUpLoginMobile />
+      <PopUpSignUpMobile />
     </div>
   )
 }

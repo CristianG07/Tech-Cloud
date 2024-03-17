@@ -6,6 +6,7 @@ import categoryReducer from './products/categorySlice'
 import brandReducer from './products/brandSlice'
 import searchReducer from './products/searchSlice'
 import cartReducer from './products/cartSlice'
+import toggleReducer from './products/toggleSlice'
 
 export const store = configureStore({
   reducer: {
@@ -14,6 +15,7 @@ export const store = configureStore({
     category: categoryReducer,
     brand: brandReducer,
     search: searchReducer,
-    cart: cartReducer
+    cart: cartReducer,
+    toggle: toggleReducer,
   }
 })

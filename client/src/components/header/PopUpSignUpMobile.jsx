@@ -5,14 +5,17 @@ import { Label } from '../ui/label'
 import { IoIosClose } from 'react-icons/io'
 import { faceboo_icon, google } from '@/assets/images'
 import { Checkbox } from '../ui/checkbox'
+import { useSelector, useDispatch } from 'react-redux'
+import { setOpenLoginMobile, setOpenSingUpMobile } from '@/redux/products/toggleSlice'
 
-export const PopUpSignUpMobile = ({props}) => {
-  const { openSignUpMobile, setOpenSignUpMobile } = props
+export const PopUpSignUpMobile = () => {
+  const dispatch = useDispatch()
+  const { isSingUpMobileOpen } = useSelector((state) => state.toggle)
 
   return (
     <section
-      className={`absolute left-0 right-0 calc_header sm:top-52 w-full sm:w-[390px] mx-auto bg-card_gray shadow-xl text-sm rounded-b-xl sm:rounded-xl px-14 py-14 z-30 transition-all duration-300 ${
-        openSignUpMobile ? 'opacity-100 visible' : 'opacity-0 invisible'
+      className={`absolute left-0 right-0 calc_header sm:top-52 w-full lg:hidden sm:w-[390px] mx-auto bg-card_gray shadow-xl text-sm rounded-b-xl sm:rounded-xl px-14 py-14 z-30 transition-all duration-300 ${
+        isSingUpMobileOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
       }`}
     >
       <div className='space-y-5'>
@@ -21,7 +24,7 @@ export const PopUpSignUpMobile = ({props}) => {
 
           <button
             onClick={() => {
-              setOpenSignUpMobile(false)
+              dispatch(setOpenSingUpMobile(false))
             }}
             className='text-text_secondary'
           >
@@ -55,11 +58,7 @@ export const PopUpSignUpMobile = ({props}) => {
             <div>
               <Label htmlFor='repeatpassword'>Repeat a password</Label>
               <div>
-                <InputForm
-                  name='repeatpassword'
-                  type='password'
-                  required
-                />
+                <InputForm name='repeatpassword' type='password' required />
               </div>
             </div>
             <div className='flex gap-3 mt-1'>
@@ -103,7 +102,8 @@ export const PopUpSignUpMobile = ({props}) => {
             </span>
             <button
               onClick={() => {
-                setOpenSignUpMobile(false)
+                dispatch(setOpenLoginMobile(true))
+                dispatch(setOpenSingUpMobile(false))
               }}
               className='text-dark_primary underline underline-offset-1'
             >

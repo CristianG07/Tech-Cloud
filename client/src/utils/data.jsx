@@ -1,5 +1,5 @@
 // images
-import { cart_sidebar, eye, facebook, heart_light_sidebar, heart_profile, information_circle_sidebar, instagram, mail, map, payments, phone, premium, shopping_outline, tabler_list, truck, twitter } from '@/assets/images'
+import { cart_sidebar, eye, heart_light_sidebar, heart_profile, information_circle_sidebar, mail, map, payments, phone, premium, shopping_outline, tabler_list, truck } from '@/assets/images'
 
 export const tabsNav = [
   { name: "Best sellers" },
@@ -14,12 +14,6 @@ export const cualities_footer = [
   {title: 'Fast delivery', text: 'Delivery up to 5 days', icon: truck},
   {title: 'Quick payment', text: 'Choose your payment method', icon: payments},
   {title: 'Best quality', text: 'Only original products', icon: premium}
-]
-
-export const links_socials = [
-  {image: instagram, link: '/'},
-  {image: facebook, link: '/'},
-  {image: twitter, link: '/'},
 ]
 
 export const sidebar = [

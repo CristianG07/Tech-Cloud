@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import { CategoryList } from '@/components/home/CategoryList'
 import { Title } from '@/components/home/Title'
+import { PopUpLogin } from '@/components/header/PopUpLogin'
+import { PopUpSignUp } from '@/components/header/PopUpSignUp'
 
 const Home = () => {
   const [numToShow, setNumToShow] = useState(10)
@@ -34,7 +36,7 @@ const Home = () => {
   }, [])
 
   return (
-    <main className='container_products max-w-7xl'>
+    <main className='container_products pb-0 max-w-7xl'>
       <section className='hidden lg:grid content_products'>
         {products.slice(0, numToShow).map((product) => (
           <CategoryList key={product.id} {...product} />
@@ -43,7 +45,7 @@ const Home = () => {
 
       {products.length > numToShow && (
         <div className='btn_show_all lg:justify-end hidden lg:flex'>
-            <button onClick={handleShowMoreAll}>See all products</button>
+          <button onClick={handleShowMoreAll}>See all products</button>
         </div>
       )}
 
@@ -64,10 +66,16 @@ const Home = () => {
               ))}
           </div>
           <div className='btn_show_all'>
-            <button onClick={() => handleShowMore(category)}>See all products</button>
+            <button onClick={() => handleShowMore(category)}>
+              See all products
+            </button>
           </div>
         </section>
       ))}
+      <div>
+        <PopUpLogin />
+        <PopUpSignUp />
+      </div>
     </main>
   )
 }

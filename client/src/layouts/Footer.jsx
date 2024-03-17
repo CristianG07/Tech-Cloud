@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 // data
-import { contact_info, cualities_footer, links_socials } from '@/utils/data'
+import { contact_info, cualities_footer } from '@/utils/data'
 // components
 import { Cualities } from '@/components/footer/Cualities'
 import { Contact } from '@/components/footer/Contact'
@@ -22,7 +22,7 @@ export const Footer = () => {
       </section>
 
       {/* section 2 */}
-      <section className='text-text_secondary'>
+      <section className='text-white bg-light_primary'>
         <div className='flex flex-col-reverse md:flex-row  items-center justify-center gap-10 lg:gap-36 py-16 px-5'>
           <div className='grid gap-4'>
             {/* logo */}
@@ -34,7 +34,7 @@ export const Footer = () => {
             </Link>
 
             {/* contact */}
-            <div className=''>
+            <div>
               {contact_info.map((info, i) => (
                 <Contact key={i} {...info} />
               ))}
@@ -42,11 +42,7 @@ export const Footer = () => {
           </div>
 
           {/* socials */}
-          <div className='flex md:flex-col justify-center gap-5'>
-            {links_socials.map((social, i) => (
-              <Socials key={i} {...social} />
-            ))}
-          </div>
+          <Socials />
 
           {/* Links */}
           <LinksFooter />
