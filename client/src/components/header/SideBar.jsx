@@ -51,7 +51,7 @@ export const SideBar = () => {
         <div className='grid gap-4'>
           {sidebar.map((item, i) => (
             <Link
-              onClick={() => {}}
+              onClick={() => dispatch(setOpenSidebar(false))}
               to={item.link}
               key={i}
               className='flex items-center gap-4'
@@ -71,7 +71,7 @@ export const SideBar = () => {
         <div className='grid gap-3 text-text_secondary'>
           {links_footer.map((nav, i) => (
             <div key={i}>
-              <Link onClick={() => {}} to={nav.link} className='hover:text-dark duration-500'>
+              <Link onClick={() => dispatch(setOpenSidebar(false))} to={nav.link} className='hover:text-dark duration-500'>
                 {nav.text}
               </Link>
             </div>
