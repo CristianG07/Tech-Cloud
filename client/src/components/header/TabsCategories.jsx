@@ -1,8 +1,9 @@
-import { Link, useParams } from 'react-router-dom';
-import { tabsNav } from '@/utils/data';
+import { Link, NavLink, useParams } from 'react-router-dom'
+import { tabsNav } from '@/utils/data'
 import { useDispatch } from 'react-redux'
-import { fetchProductsByCategory } from '@/redux/products/categorySlice';
-import { useEffect } from 'react';
+import { fetchProductsByCategory } from '@/redux/products/categorySlice'
+import { useEffect } from 'react'
+import { Categories } from './Categories'
 
 export const TabsCategories = () => {
   const dispatch = useDispatch()
@@ -10,10 +11,9 @@ export const TabsCategories = () => {
 
   useEffect(() => {
     if (categoryName) {
-      dispatch(fetchProductsByCategory(categoryName));
+      dispatch(fetchProductsByCategory(categoryName))
     }
   }, [categoryName, dispatch])
-  
 
   return (
     <nav className='show_lg lg:flex justify-center bg-accent_primary text-white h-14'>
@@ -21,26 +21,33 @@ export const TabsCategories = () => {
         <Link
           exact='true'
           to='/'
-          className={`tabs_categories ${!categoryName ? 'bg-dark' : ''}`}
+          className={`tabs_categories ${!categoryName && 'bg-dark'}`}
         >
           All Products
         </Link>
-        <div className='flex h-full'>
+        <div className='flex h-full z-20'>
           {tabsNav.map((tab, i) => (
-            <div key={i}>
-              <Link
+            <div key={i} className='relative group'>
+              <NavLink
                 to={`/category/${tab.name.toLowerCase()}`}
-                className={`tabs_categories ${
-                  categoryName && categoryName.includes(tab.name.toLowerCase()) ? 'bg-dark' : ''
-                }`}
+                className={({ isActive }) =>
+                  `tabs_categories group-hover:bg-dark ${isActive && 'bg-dark'}`
+                }
               >
                 {tab.name}
-              </Link>
+              </NavLink>
+              <div className='opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 absolute w-full grid justify-center py-2 bg-card_gray rounded-b-xl'>
+                <div className='grid gap-1'>
+                  <span className='text-lg lg:text-xl text-dark_primary'>{tab.name}</span>
+                  {tab.brands.map((brand, i) => (
+                    <Categories key={i} {...brand} />
+                  ))}
+                </div>
+              </div>
             </div>
           ))}
         </div>
       </div>
     </nav>
-  );
-};
-
+  )
+}

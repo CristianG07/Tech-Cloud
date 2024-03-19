@@ -1,3 +1,4 @@
+import { FormatPrice } from '@/utils/FormatPrice'
 import { ButtonCart } from '../ui/ButtonCart'
 import { ButtonFavorite } from '../ui/ButtonFavorite'
 import { useNavigate } from 'react-router-dom'
@@ -28,11 +29,11 @@ export const CardProducts = (product) => {
                 discounted_price ? 'text-red-500' : ''
               } text-lg text-nowrap font-semibold`}
             >
-              {actual_price} zł
+              {FormatPrice(actual_price)}
             </span>
             {discounted_price && (
               <span className='text-discounted_price text-base line-through font-semibold'>
-                {discounted_price} zł
+                {FormatPrice(discounted_price)}
               </span>
             )}
           </div>

@@ -7,7 +7,7 @@ import { Button } from '../ui/button'
 import { useDispatch, useSelector } from 'react-redux'
 import { setOpenLoginMobile, setOpenSingUpMobile } from '@/redux/products/toggleSlice'
 
-const PopUpLoginMobile = () => {
+export const PopUpLoginMobile = () => {
   const dispatch = useDispatch()
   const { isLoginMobileOpen } = useSelector((state) => state.toggle)
   
@@ -99,4 +99,3 @@ const PopUpLoginMobile = () => {
     </section>
   )
 }
-export default PopUpLoginMobile

@@ -7,25 +7,17 @@ import { Button } from '@/components/ui/button'
 import { InputSelect } from '@/components/singlePage/InputSelect'
 import { Checkbox } from '@/components/ui/checkbox'
 import { useEffect } from 'react'
+import { FormatPrice } from '@/utils/FormatPrice'
 
 const Basket = () => {
   const { data: products } = useSelector((state) => state.cart)
-
-  const formatPrice = (price) => {
-    return new Intl.NumberFormat('pl-PL', {
-      style: 'currency',
-      currency: 'PLN'
-    }).format(price)
-  }
 
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
 
   const totalAmount = products.reduce((total, product) => {
-    const priceWithoutFormat = parseFloat(
-      product.actual_price.replace(/\s|,/g, '')
-    )
+    const priceWithoutFormat = product.actual_price
     return total + priceWithoutFormat * product.quantity
   }, 0)
 
@@ -265,7 +257,7 @@ const Basket = () => {
                   <div className='flex items-center gap-9 text-nowrap'>
                     <p>Product price</p>
                     <span className='text-dark_primary text-xl font-medium'>
-                      {formatPrice(totalAmount)}
+                      {FormatPrice(totalAmount)}
                     </span>
                   </div>
                   <div className='flex items-center gap-5'>
@@ -309,13 +301,13 @@ const Basket = () => {
         </form>
         <div className='hidden lg:flex gap-20 items-end mt-5'>
           <div className='space-y-3 text-text_secondary w-fit'>
-          <h4 className='title_single_product text-xl font-medium my-5 text-black'>
-            Summary
-          </h4>
+            <h4 className='title_single_product text-xl font-medium my-5 text-black'>
+              Summary
+            </h4>
             <div className='flex items-center gap-9 text-nowrap'>
               <p>Product price</p>
               <span className='text-dark_primary text-xl font-medium'>
-                {formatPrice(totalAmount)}
+                {FormatPrice(totalAmount)}
               </span>
             </div>
             <div className='flex items-center gap-5'>

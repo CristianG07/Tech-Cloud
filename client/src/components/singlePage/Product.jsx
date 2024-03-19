@@ -19,6 +19,7 @@ import { Navigation, Pagination } from 'swiper/modules'
 import { SlidePrevButton } from './SlidePrevButton'
 import { SlideNextButton } from './SlideNextButton'
 import { ProductSlide } from './ProductSlide'
+import { FormatPrice } from '@/utils/FormatPrice'
 
 const Product = (product) => {
   const {
@@ -85,11 +86,11 @@ const Product = (product) => {
                     discounted_price && 'text-red-500'
                   } text-3xl font-semibold`}
                 >
-                  {actual_price} zł
+                  {FormatPrice(actual_price)}
                 </span>
                 {discounted_price && (
                   <span className='text-discounted_price text-2xl line-through font-semibold'>
-                    {discounted_price} zł
+                    {FormatPrice(discounted_price)}
                   </span>
                 )}
               </div>
@@ -147,6 +148,7 @@ const Product = (product) => {
           modules={[Navigation, Pagination]}
           slidesPerView={2}
           pagination={true}
+          navigation={true}
           breakpoints={{
             // when window width is >= 640px
             640: {
@@ -159,7 +161,8 @@ const Product = (product) => {
             // when window width is >= 960px
             960: {
               slidesPerView: 5,
-              pagination: false
+              pagination: false,
+              navigation: false
             }
           }}
           loop={true}

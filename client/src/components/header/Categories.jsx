@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom"
 
-export const Categories = ({ text, link, setToggle }) => {
+export const Categories = ({ text, link }) => {
   return (
-    <div className="text-sm sm:text-base">
-      <Link onClick={() => setToggle(false)} to={`/brand${link}`}>{text}</Link>
+    <div className="text-base text-dark">
+      <Link to={`/brand${link}`}>{text}</Link>
     </div>
   )
 }

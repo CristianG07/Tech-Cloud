@@ -42,7 +42,7 @@ export const Footer = () => {
           </div>
 
           {/* socials */}
-          <Socials />
+          <Socials className='md:flex-col' />
 
           {/* Links */}
           <LinksFooter />

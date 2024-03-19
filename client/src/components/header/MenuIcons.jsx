@@ -13,8 +13,9 @@ import { useSelector, useDispatch } from 'react-redux'
 import { setOpenLogin, setOpenSidebar } from '@/redux/products/toggleSlice'
 // components
 import { SideBar } from './SideBar'
-import PopUpLoginMobile from './PopUpLoginMobile'
+import { PopUpLoginMobile } from './PopUpLoginMobile'
 import { PopUpSignUpMobile } from './PopUpSignUpMobile'
+import { Bars } from '../ui/Bars'
 
 export const MenuIcons = () => {
   const dispatch = useDispatch()
@@ -23,7 +24,7 @@ export const MenuIcons = () => {
   const { data: totalItems } = useSelector((state) => state.cart)
 
   return (
-    <div className='flex items-center gap-2 lg:gap-6'>
+    <div className='flex items-center gap-4 lg:gap-6'>
       <button className='show_lg w-8 relative'>
         <img src={heart_light} alt='heart_light_icon' />
         {favorites.length > 0 && (
@@ -58,7 +59,7 @@ export const MenuIcons = () => {
           onClick={() => dispatch(setOpenSidebar(!isSidebarOpen))}
           className='block lg:hidden w-8'
         >
-          <img src={bars} alt='bars_icons' />
+          <Bars />
         </button>
         <SideBar />
       </OutsideClickHandler>

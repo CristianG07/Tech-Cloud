@@ -10,10 +10,6 @@ import { Link, useNavigate } from 'react-router-dom'
 
 export const Header = () => {
   const navigate = useNavigate()
-  // const [openLogin, setOpenLogin] = useState(false)
-  // const [openSignUp, setOpenSignUp] = useState(false)
-  // const [openLoginMobile, setOpenLoginMobile] = useState(false)
-  // const [openSignUpMobile, setOpenSignUpMobile] = useState(false)
   const [searchProducts, setSearchProducts] = useState('')
 
   const handleKeyPress = (e) => {
@@ -30,9 +26,9 @@ export const Header = () => {
   }
 
   return (
-    <div>
+    <>
       <header className='bg-light_primary'>
-        <div className='w-[90%] h-[5rem] max-w-7xl md:h-24 mx-auto flex items-center justify-between gap-4 md:gap-32'>
+        <div className='w-[90%] h-[5rem] max-w-7xl md:h-24 mx-auto flex items-center justify-between gap-4 lg:gap-32'>
           <Link to='/' className='flex items-center gap-3'>
             <div>
               <img className='min-w-16' src={logo} alt='logo' />
@@ -64,6 +60,6 @@ export const Header = () => {
         </div>
         <TabsCategories />
       </header>
-    </div>
+    </>
   )
 }

@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react'
 import { removeFromCart, toggleCartQty } from '@/redux/products/cartSlice'
 import { useSelector, useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
+import { FormatPrice } from '@/utils/FormatPrice'
 
 export const PopupCart = ({
   id,
@@ -20,15 +21,6 @@ export const PopupCart = ({
   const dispatch = useDispatch()
   const [qty, setQty] = useState(1)
 
-  // Función para formatear el precio en el formato deseado (3 424,00)
-  const formatPrice = (price) => {
-    return new Intl.NumberFormat('pl-PL', {
-      style: 'currency',
-      currency: 'PLN'
-    }).format(price)
-  }
-
-  // Buscar el producto en el carrito cuando el componente se monta
   useEffect(() => {
     const itemInCart = cart.find((item) => item.id === id)
     if (itemInCart) {
@@ -48,12 +40,8 @@ export const PopupCart = ({
     dispatch(toggleCartQty({ id, type: 'INC' }))
   }
 
-  const totalPrice = formatPrice(
-    parseFloat((actual_price || '').replace(/\s|,/g, '')) * qty
-  )
-  const totalPriceDiscounted = formatPrice(
-    parseFloat((discounted_price || '').replace(/\s|,/g, '')) * qty
-  )
+  const totalPrice = FormatPrice(actual_price * qty)
+  const totalPriceDiscounted = FormatPrice(discounted_price * qty)
 
   return (
     <>

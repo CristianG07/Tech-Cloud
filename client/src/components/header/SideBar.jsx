@@ -3,7 +3,12 @@ import { links_footer, sidebar } from '@/utils/data'
 import { Link } from 'react-router-dom'
 import { Socials } from '../footer/Socials'
 import { useSelector, useDispatch } from 'react-redux'
-import { setOpenLoginMobile, setOpenSidebar, setOpenSingUpMobile } from '@/redux/products/toggleSlice'
+import {
+  setOpenLoginMobile,
+  setOpenSidebar,
+  setOpenSingUpMobile
+} from '@/redux/products/toggleSlice'
+import { Catalog } from './Catalog'
 
 export const SideBar = () => {
   const dispatch = useDispatch()
@@ -13,7 +18,7 @@ export const SideBar = () => {
     <div
       className={`absolute lg:hidden z-20 rounded-b-2xl shadow-lg ${
         isSidebarOpen ? '' : 'translate-x-full'
-      } calc_header w-[95%] right-0 max-w-full sm:max-w-[350px] duration-200 ease-linear`}
+      } calc_header w-[95%] right-0 max-w-full sm:max-w-[400px] duration-200 ease-linear`}
     >
       <div className='relative flex justify-center items-center gap-6 bg-dark_primary px-12 py-5 text-white'>
         <div className='w-10 h-10'>
@@ -26,7 +31,7 @@ export const SideBar = () => {
               dispatch(setOpenSidebar(false))
             }}
             className='pr-3 text-white'
-            >
+          >
             Log in
           </button>
           <div className='text-white'>|</div>
@@ -42,6 +47,7 @@ export const SideBar = () => {
         </div>
       </div>
       <div className='grid gap-6 bg-card_gray p-8 rounded-b-2xl'>
+        <Catalog />
         <div className='grid gap-4'>
           {sidebar.map((item, i) => (
             <Link
@@ -59,13 +65,13 @@ export const SideBar = () => {
         </div>
         {/* socials */}
         <div className='flex gap-5 w-52'>
-          <Socials />
+          <Socials className='md:flex-row' />
         </div>
         {/* Links */}
-        <div className='grid gap-3 text-text_secondary text-sm'>
+        <div className='grid gap-3 text-text_secondary'>
           {links_footer.map((nav, i) => (
             <div key={i}>
-              <Link onClick={() => {}} to={nav.link}>
+              <Link onClick={() => {}} to={nav.link} className='hover:text-dark duration-500'>
                 {nav.text}
               </Link>
             </div>
