@@ -7,8 +7,6 @@ import { TabsCategories } from '@/components/header/TabsCategories'
 // ui
 import { Input } from '@/components/ui/input'
 import { Link, useNavigate } from 'react-router-dom'
-import { PopUpLogin } from '@/components/header/PopUpLogin'
-import { PopUpSignUp } from '@/components/header/PopUpSignUp'
 
 export const Header = () => {
   const navigate = useNavigate()
@@ -61,10 +59,6 @@ export const Header = () => {
           <MenuIcons />
         </div>
         <TabsCategories />
-        <div>
-          <PopUpLogin />
-          <PopUpSignUp />
-        </div>
       </header>
     </>
   )

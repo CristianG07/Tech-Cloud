@@ -14,7 +14,7 @@ export const PopUpLogin = () => {
 
   return (
     <section
-      className={`absolute left-0 right-0 calc_header md:top-56 w-full md:w-[390px] mx-auto bg-card_gray shadow-xl rounded-b-xl lg:rounded-xl px-14 py-14 z-30 transition-all duration-300 ${
+      className={`hidden lg:block absolute left-0 right-0 calc_header md:top-52 w-full md:w-[390px] mx-auto bg-card_gray shadow-xl rounded-b-xl lg:rounded-xl px-14 py-14 z-20 transition-all duration-300 ${
         isLoginOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
       }`}
     >

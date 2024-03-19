@@ -15,6 +15,8 @@ import { setOpenLogin, setOpenSidebar } from '@/redux/products/toggleSlice'
 import { SideBar } from './SideBar'
 import { PopUpLoginMobile } from './PopUpLoginMobile'
 import { PopUpSignUpMobile } from './PopUpSignUpMobile'
+import { PopUpLogin } from './PopUpLogin'
+import { PopUpSignUp } from './PopUpSignUp'
 import { Bars } from '../ui/Bars'
 
 export const MenuIcons = () => {
@@ -65,6 +67,8 @@ export const MenuIcons = () => {
       </OutsideClickHandler>
       <PopUpLoginMobile />
       <PopUpSignUpMobile />
+      <PopUpLogin />
+      <PopUpSignUp />
     </div>
   )
 }
