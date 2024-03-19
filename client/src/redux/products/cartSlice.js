@@ -111,7 +111,7 @@ const cartSlice = createSlice({
       state.totalAmount = FormatPrice(state.totalAmount);
     }
   }
-});
+})
 
 export const { addToCart, removeFromCart, toggleCartQty, getCartTotal } =
   cartSlice.actions;

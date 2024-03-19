@@ -2,8 +2,6 @@ import { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import { CategoryList } from '@/components/home/CategoryList'
 import { Title } from '@/components/home/Title'
-import { PopUpLogin } from '@/components/header/PopUpLogin'
-import { PopUpSignUp } from '@/components/header/PopUpSignUp'
 
 const Home = () => {
   const [numToShow, setNumToShow] = useState(10)
@@ -72,10 +70,6 @@ const Home = () => {
           </div>
         </section>
       ))}
-      <div>
-        <PopUpLogin />
-        <PopUpSignUp />
-      </div>
     </main>
   )
 }

@@ -1,11 +1,7 @@
 import { useEffect, useState } from 'react'
 import { GoPlus } from 'react-icons/go'
 import { CgMathMinus } from 'react-icons/cg'
-import {
-  getCartTotal,
-  removeFromCart,
-  toggleCartQty
-} from '@/redux/products/cartSlice'
+import { removeFromCart, toggleCartQty } from '@/redux/products/cartSlice'
 import { useSelector, useDispatch } from 'react-redux'
 import { FormatPrice } from '@/utils/FormatPrice'
 
