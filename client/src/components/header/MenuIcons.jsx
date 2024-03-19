@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import OutsideClickHandler from 'react-outside-click-handler'
 // images
 import {
-  bars,
   cart,
   heart_light,
   information_circle,

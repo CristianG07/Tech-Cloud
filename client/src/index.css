@@ -119,7 +119,7 @@ body {
     @apply flex justify-center items-center mt-1 lg:justify-start text-lg text-dark_primary font-semibold underline
   }
   .tabs_categories {
-    @apply px-6 flex items-center h-full hover:bg-dark transition-all duration-700 text-lg lg:text-xl text-nowrap
+    @apply px-7 flex items-center h-full hover:bg-dark transition-all duration-700 text-lg lg:text-xl text-nowrap
   }
   .container_products {
     @apply w-[90%] lg:w-[75%] max-w-7xl mx-auto pb-20 pt-5 lg:pt-12

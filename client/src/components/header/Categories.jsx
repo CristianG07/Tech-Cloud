@@ -6,7 +6,7 @@ export const Categories = ({ text, link }) => {
   const dispatch = useDispatch()
 
   return (
-    <div className="text-base text-dark">
+    <div className="text-sm text-dark">
       <Link onClick={() => dispatch(setOpenSidebar(false))} to={`/brand${link}`}>{text}</Link>
     </div>
   )

@@ -25,6 +25,14 @@ export const TabsCategories = () => {
         >
           All Products
         </Link>
+        <NavLink
+          to={`/category/Best sellers`}
+          className={({ isActive }) =>
+            `tabs_categories group-hover:bg-dark ${isActive && 'bg-dark'}`
+          }
+        >
+          Best sellers
+        </NavLink>
         <div className='flex h-full z-20'>
           {tabsNav.map((tab, i) => (
             <div key={i} className='relative group'>
@@ -36,9 +44,11 @@ export const TabsCategories = () => {
               >
                 {tab.name}
               </NavLink>
-              <div className='opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 absolute w-full grid justify-center py-2 bg-card_gray rounded-b-xl'>
+              <div className='opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 absolute px-5 w-full grid justify-center py-3 bg-card_gray rounded-b-xl'>
                 <div className='grid gap-1'>
-                  <span className='text-lg lg:text-xl text-dark_primary'>{tab.name}</span>
+                  <span className='text-lg text-dark_primary'>
+                    {tab.name}
+                  </span>
                   {tab.brands.map((brand, i) => (
                     <Categories key={i} {...brand} />
                   ))}

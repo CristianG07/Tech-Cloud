@@ -17,16 +17,6 @@ import {
 
 export const tabsNav = [
   {
-    name: 'Best sellers',
-    brands: [
-      { text: 'Apple', link: '/Apple' },
-      { text: 'Samsung', link: '/Samsung' },
-      { text: 'Motorola', link: '/Motorola' },
-      { text: 'Xiaomi', link: '/Xiaomi' },
-      { text: 'Oppo', link: '/Oppo' }
-    ]
-  },
-  {
     name: 'Mobile phones',
     brands: [
       { text: 'Apple', link: '/Apple' },
@@ -41,39 +31,39 @@ export const tabsNav = [
     brands: [
       { text: 'Apple', link: '/Apple' },
       { text: 'Samsung', link: '/Samsung' },
-      { text: 'Motorola', link: '/Motorola' },
+      { text: 'Lenovo', link: '/Lenovo' },
       { text: 'Xiaomi', link: '/Xiaomi' },
-      { text: 'Oppo', link: '/Oppo' }
+      { text: 'LG', link: '/LG' }
     ]
   },
   {
     name: 'Laptops',
     brands: [
       { text: 'Apple', link: '/Apple' },
-      { text: 'Samsung', link: '/Samsung' },
-      { text: 'Motorola', link: '/Motorola' },
-      { text: 'Xiaomi', link: '/Xiaomi' },
-      { text: 'Oppo', link: '/Oppo' }
+      { text: 'HP', link: '/HP' },
+      { text: 'Lenovo', link: '/Lenovo' },
+      { text: 'Dell', link: '/Dell' },
+      { text: 'ASUS', link: '/ASUS' }
     ]
   },
   {
     name: 'Desktops',
     brands: [
-      { text: 'Apple', link: '/Apple' },
-      { text: 'Samsung', link: '/Samsung' },
-      { text: 'Motorola', link: '/Motorola' },
-      { text: 'Xiaomi', link: '/Xiaomi' },
-      { text: 'Oppo', link: '/Oppo' }
+      { text: 'Monitors', link: '/Monitors' },
+      { text: 'Keyboards and mouses', link: '/Keyboards and mouses' },
+      { text: 'Loud speakers', link: '/Loud speakers' },
+      { text: 'Computer softwares', link: '/Computer softwares' },
+      { text: 'Adapters', link: '/Adapters' }
     ]
   },
   {
     name: 'Accessories',
     brands: [
-      { text: 'Apple', link: '/Apple' },
-      { text: 'Samsung', link: '/Samsung' },
-      { text: 'Motorola', link: '/Motorola' },
-      { text: 'Xiaomi', link: '/Xiaomi' },
-      { text: 'Oppo', link: '/Oppo' }
+      { text: 'Protective glasses', link: '/Protective glasses' },
+      { text: 'Cases and covers', link: '/Cases and covers' },
+      { text: 'Chargers', link: '/Chargers' },
+      { text: 'Head phones', link: '/Head phones' },
+      { text: 'Cables and adapters', link: '/Cables and adapters' }
     ]
   }
 ]
