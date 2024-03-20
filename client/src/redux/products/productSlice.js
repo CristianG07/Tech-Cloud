@@ -31,7 +31,7 @@ export const fetchProducts = () => {
   return async function fetchProducts(dispatch) {
     dispatch(setStatus(STATUS.LOADING))
     try {
-      const response = await axios.get(`${BASE_URL}products`)
+      const response = await axios.get(`${BASE_URL}products?_sort=id`)
       dispatch(setProducts(response.data))
       wait(1000).then(() => dispatch(setStatus(STATUS.IDLE)))
     } catch (error) {

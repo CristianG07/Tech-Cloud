@@ -30,7 +30,7 @@ export const fetchProductsByCategory = (categoryName) => async (dispatch) => {
   
   try {
     const response = await axios.get(
-      `${BASE_URL}products/?category_like=${categoryName}`
+      `${BASE_URL}products/?category_like=${categoryName}&_sort=id`
     )
     dispatch(setCategories(response.data))
     wait(1000).then(() => dispatch(setStatus(STATUS.IDLE)))
