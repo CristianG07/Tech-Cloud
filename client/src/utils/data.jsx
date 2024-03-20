@@ -19,51 +19,51 @@ export const tabsNav = [
   {
     name: 'Mobile phones',
     brands: [
-      { text: 'Apple', link: '/Apple' },
-      { text: 'Samsung', link: '/Samsung' },
-      { text: 'Motorola', link: '/Motorola' },
-      { text: 'Xiaomi', link: '/Xiaomi' },
-      { text: 'Oppo', link: '/Oppo' }
+      { text: 'Apple' },
+      { text: 'Samsung' },
+      { text: 'Motorola' },
+      { text: 'Xiaomi' },
+      { text: 'Oppo' }
     ]
   },
   {
     name: 'Tablets',
     brands: [
-      { text: 'Apple', link: '/Apple' },
-      { text: 'Samsung', link: '/Samsung' },
-      { text: 'Lenovo', link: '/Lenovo' },
-      { text: 'Xiaomi', link: '/Xiaomi' },
-      { text: 'LG', link: '/LG' }
+      { text: 'Apple' },
+      { text: 'Samsung' },
+      { text: 'Lenovo' },
+      { text: 'Xiaomi' },
+      { text: 'LG' }
     ]
   },
   {
     name: 'Laptops',
     brands: [
-      { text: 'Apple', link: '/Apple' },
-      { text: 'HP', link: '/HP' },
-      { text: 'Lenovo', link: '/Lenovo' },
-      { text: 'Dell', link: '/Dell' },
-      { text: 'ASUS', link: '/ASUS' }
+      { text: 'Apple' },
+      { text: 'HP' },
+      { text: 'Lenovo' },
+      { text: 'Dell' },
+      { text: 'ASUS' }
     ]
   },
   {
     name: 'Desktops',
     brands: [
-      { text: 'Monitors', link: '/Monitors' },
-      { text: 'Keyboards and mouses', link: '/Keyboards and mouses' },
-      { text: 'Loud speakers', link: '/Loud speakers' },
-      { text: 'Computer softwares', link: '/Computer softwares' },
-      { text: 'Adapters', link: '/Adapters' }
+      { text: 'Monitors' },
+      { text: 'Keyboards and mouses' },
+      { text: 'Loud speakers' },
+      { text: 'Computer softwares' },
+      { text: 'Adapters' }
     ]
   },
   {
     name: 'Accessories',
     brands: [
-      { text: 'Protective glasses', link: '/Protective glasses' },
-      { text: 'Cases and covers', link: '/Cases and covers' },
-      { text: 'Chargers', link: '/Chargers' },
-      { text: 'Head phones', link: '/Head phones' },
-      { text: 'Cables and adapters', link: '/Cables and adapters' }
+      { text: 'Protective glasses' },
+      { text: 'Cases and covers' },
+      { text: 'Chargers' },
+      { text: 'Head phones' },
+      { text: 'Cables and adapters' }
     ]
   }
 ]

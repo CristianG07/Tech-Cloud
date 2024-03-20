@@ -4,25 +4,25 @@ import { ButtonFavorite } from '../ui/ButtonFavorite'
 import { useNavigate } from 'react-router-dom'
 
 export const ProductSlide = (product) => {
-  const { id, image, name, actual_price, discounted_price } = product
+  const { id, image, name, category, brand, actual_price, discounted_price } = product
   const navigate = useNavigate()
 
   const handleClick = (productId) => {
-    navigate(`/product/${productId}`)
+    navigate(`/category/${category}/brand/${brand}/product/${productId}`)
   }
 
   return (
     <div
       onClick={() => handleClick(id)}
-      className='cursor-pointer p-1 mb-5 md:mb-8 w-full'
+      className='cursor-pointer p-1 mb-9 md:mb-7 w-full'
     >
       <div className='max-w-sm'>
-        <img src={image} alt={name} loading='lazy' />
+        <img src={image} alt={name} className='aspect-[46/51]' />
       </div>
-      <div className='space-y-1 py-5'>
-        <p className=''>{name}</p>
-        <div className='flex justify-between gap-1 pr-2'>
-          <div className='grid'>
+      <div className='py-4'>
+        <div className='flex flex-col justify-between min-h-[84px]'>
+          <p className='capitalize'>{name}</p>
+          <div className='flex justify-between gap-1.5'>
             <span
               className={`${
                 discounted_price ? 'text-red-500' : ''
@@ -30,20 +30,22 @@ export const ProductSlide = (product) => {
             >
               {FormatPrice(actual_price)}
             </span>
-            {discounted_price && (
-              <span className='text-discounted_price text-base line-through font-semibold'>
-                {FormatPrice(discounted_price)}
-              </span>
-            )}
-          </div>
-          <div className='flex gap-2'>
-            <div>
-              <ButtonCart {...product} />
-            </div>
-            <div>
-              <ButtonFavorite {...product} />
+            <div className='flex gap-2 mr-2'>
+              <div>
+                <ButtonCart {...product} />
+              </div>
+              <div>
+                <ButtonFavorite {...product} />
+              </div>
             </div>
           </div>
+        </div>
+        <div className='-mt-2'>
+          {discounted_price && (
+            <span className='text-discounted_price text-base line-through font-semibold'>
+              {FormatPrice(discounted_price)}
+            </span>
+          )}
         </div>
       </div>
     </div>

@@ -25,12 +25,12 @@ export const brandSlice = createSlice({
 export const { setBrand, setStatus } = brandSlice.actions
 export default brandSlice.reducer
 
-export const fetchProductsByBrands = (brandName) => async (dispatch) => {
+export const fetchProductsByBrands = (categoryName, brandName) => async (dispatch) => {
   dispatch(setStatus(STATUS.LOADING))
   
   try {
     const response = await axios.get(
-      `${BASE_URL}products/?brand_like=${brandName}`
+      `${BASE_URL}products/?category_like=${categoryName}&brand_like=${brandName}`
     )
     dispatch(setBrand(response.data))
     wait(1000).then(() => dispatch(setStatus(STATUS.IDLE)))

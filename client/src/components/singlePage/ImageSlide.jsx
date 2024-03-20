@@ -21,17 +21,17 @@ export const ImageSlide = ({ image }) => {
     >
       <SwiperSlide>
         <div className='p-10'>
-          <img src={image} alt='' />
+          <img className='aspect-[193/214]' src={image} alt='' />
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className='p-10'>
-          <img src={image} alt='' />
+          <img className='aspect-[193/214]' src={image} alt='' />
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className='p-10'>
-          <img src={image} alt='' />
+          <img className='aspect-[193/214]' src={image} alt='' />
         </div>
       </SwiperSlide>
       <div className='hidden absolute top-0 md:flex justify-between items-center w-full h-full'>

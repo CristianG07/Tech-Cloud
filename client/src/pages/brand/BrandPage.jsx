@@ -7,14 +7,14 @@ import { fetchProductsByBrands } from '@/redux/products/brandSlice'
 
 const BrandPage = () => {
   const dispatch = useDispatch()
-  const { brandName } = useParams()
+  const { categoryName, brandName } = useParams()
   const { data: products } = useSelector((state) => state.brand)
 
   useEffect(() => {
     if (brandName) {
-      dispatch(fetchProductsByBrands(brandName))
+      dispatch(fetchProductsByBrands(categoryName,brandName))
     }
-  }, [brandName, dispatch])
+  }, [categoryName, brandName, dispatch])
 
   useEffect(() => {
     window.scrollTo(0, 0)

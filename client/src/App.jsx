@@ -20,9 +20,9 @@ function App() {
           <Route path='/basket' element={<Basket />} />
           <Route path='/profile' element={<Profile />} />
           <Route path='/search/:searchName' element={<SearchPage />} />
-          <Route path='/product/:productId' element={<SinglePage />} />
           <Route path="/category/:categoryName" element={<CategoryPage />} />
-          <Route path="/brand/:brandName" element={<BrandPage />} />
+          <Route path="/category/:categoryName/brand/:brandName" element={<BrandPage />} />
+          <Route path='/category/:categoryName/brand/:brandName/product/:productId' element={<SinglePage />} />
         </Route>
       </Routes>
     </>

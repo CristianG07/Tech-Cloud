@@ -4,26 +4,22 @@ import { ButtonFavorite } from '../ui/ButtonFavorite'
 import { useNavigate } from 'react-router-dom'
 
 export const CardProducts = (product) => {
-  const { id, image, name, actual_price, discounted_price } = product
+  const { id, image, name, category, brand, actual_price, discounted_price } = product
   const navigate = useNavigate()
 
   const handleClick = (productId) => {
-    navigate(`/product/${productId}`)
+    navigate(`/category/${category}/brand/${brand}/product/${productId}`)
   }
 
   return (
     <div onClick={() => handleClick(id)} className='cursor-pointer'>
       <div>
-        <img
-          src={image}
-          alt={name}
-          // className='aspect-[46/51]'
-        />
+        <img src={image} alt={name} className='aspect-[46/51]' />
       </div>
-      <div className='grid gap-2 py-5'>
-        <p className=''>{name}</p>
-        <div className='flex gap-2 justify-between'>
-          <div className='grid'>
+      <div className='py-4'>
+        <div className='flex flex-col justify-between min-h-[84px]'>
+          <p className='capitalize'>{name}</p>
+          <div className='flex justify-between gap-1.5'>
             <span
               className={`${
                 discounted_price ? 'text-red-500' : ''
@@ -31,20 +27,22 @@ export const CardProducts = (product) => {
             >
               {FormatPrice(actual_price)}
             </span>
-            {discounted_price && (
-              <span className='text-discounted_price text-base line-through font-semibold'>
-                {FormatPrice(discounted_price)}
-              </span>
-            )}
-          </div>
-          <div className='flex gap-2'>
-            <div>
-              <ButtonCart {...product} />
-            </div>
-            <div>
-              <ButtonFavorite {...product} />
+            <div className='flex gap-2 mr-2'>
+              <div>
+                <ButtonCart {...product} />
+              </div>
+              <div>
+                <ButtonFavorite {...product} />
+              </div>
             </div>
           </div>
+        </div>
+        <div className='-mt-2'>
+          {discounted_price && (
+            <span className='text-discounted_price text-base line-through font-semibold'>
+              {FormatPrice(discounted_price)}
+            </span>
+          )}
         </div>
       </div>
     </div>

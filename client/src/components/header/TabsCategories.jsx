@@ -50,7 +50,7 @@ export const TabsCategories = () => {
                     {tab.name}
                   </span>
                   {tab.brands.map((brand, i) => (
-                    <Categories key={i} {...brand} />
+                    <Categories key={i} name={tab.name} {...brand} />
                   ))}
                 </div>
               </div>

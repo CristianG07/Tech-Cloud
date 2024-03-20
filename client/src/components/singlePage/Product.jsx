@@ -73,7 +73,7 @@ const Product = (product) => {
           </div>
           <div className='flex flex-col justify-center gap-10 md:gap-5 w-full max-w-md md:w-[69%] mx-auto text-pretty'>
             <div className='flex flex-col gap-5 mx-auto text-pretty'>
-              <h3 className='text-xl md:text-lg lg:text-2xl font-medium'>
+              <h3 className='text-xl md:text-lg lg:text-2xl font-medium capitalize'>
                 {name}
               </h3>
               <div className='flex items-center justify-between text-dark_primary'>
@@ -149,6 +149,7 @@ const Product = (product) => {
           slidesPerView={2}
           pagination={true}
           navigation={true}
+          spaceBetween={15}
           breakpoints={{
             // when window width is >= 640px
             640: {
