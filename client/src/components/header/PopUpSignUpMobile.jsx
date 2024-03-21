@@ -7,13 +7,26 @@ import { faceboo_icon, google } from '@/assets/images'
 import { Checkbox } from '../ui/checkbox'
 import { useSelector, useDispatch } from 'react-redux'
 import { setOpenLoginMobile, setOpenSingUpMobile } from '@/redux/products/toggleSlice'
+import { useEffect, useRef } from 'react'
 
 export const PopUpSignUpMobile = () => {
   const dispatch = useDispatch()
   const { isSingUpMobileOpen } = useSelector((state) => state.toggle)
+  const refPopUp = useRef(null)
+
+  useEffect(() => {
+    document.addEventListener('click', handleClickOutSide, true)
+  }, [])
+  
+  const handleClickOutSide = (e) => {
+    if(!refPopUp.current.contains(e.target)) {
+      dispatch(setOpenSingUpMobile(false))
+    }
+  }
 
   return (
     <section
+    ref={refPopUp}
       className={`absolute left-0 right-0 calc_header sm:top-52 w-full lg:hidden sm:w-[390px] mx-auto bg-card_gray shadow-xl text-sm rounded-b-xl sm:rounded-xl px-14 py-14 z-30 transition-all duration-300 ${
         isSingUpMobileOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
       }`}

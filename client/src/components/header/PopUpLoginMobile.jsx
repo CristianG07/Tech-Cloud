@@ -6,13 +6,26 @@ import { faceboo_icon, google } from '@/assets/images'
 import { Button } from '../ui/button'
 import { useDispatch, useSelector } from 'react-redux'
 import { setOpenLoginMobile, setOpenSingUpMobile } from '@/redux/products/toggleSlice'
+import { useEffect, useRef } from 'react'
 
 export const PopUpLoginMobile = () => {
   const dispatch = useDispatch()
   const { isLoginMobileOpen } = useSelector((state) => state.toggle)
+  const refPopUp = useRef(null)
+
+  useEffect(() => {
+    document.addEventListener('click', handleClickOutSide, true)
+  }, [])
+  
+  const handleClickOutSide = (e) => {
+    if(!refPopUp.current.contains(e.target)) {
+      dispatch(setOpenLoginMobile(false))
+    }
+  }
   
   return (
     <section
+    ref={refPopUp}
       className={`absolute left-0 right-0 calc_header sm:top-52 w-full sm:w-[390px] lg:hidden mx-auto bg-card_gray shadow-xl rounded-b-xl sm:rounded-xl px-14 py-14 text-sm z-30 transition-all duration-300 ${
         isLoginMobileOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
       }`}

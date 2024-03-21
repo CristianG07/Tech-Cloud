@@ -30,7 +30,7 @@ export const fetchProductsBySearch = (searchName) => async (dispatch) => {
   
   try {
     const response = await axios.get(
-      `${BASE_URL}products/?name_like=${searchName}`
+      `${BASE_URL}products/?name_like=${searchName}&_sort=id`
     )
     dispatch(setSearch(response.data))
     wait(1000).then(() => dispatch(setStatus(STATUS.IDLE)))

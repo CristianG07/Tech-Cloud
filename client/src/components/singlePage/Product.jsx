@@ -46,9 +46,9 @@ const Product = (product) => {
       ...product,
       quantity: qty,
       newTotalPrice
-    };
+    }
     dispatch(addToCart(tempProduct))
-  };  
+  }
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -143,21 +143,23 @@ const Product = (product) => {
         </div>
       </div>
       <div className='my-10 md:mt-16'>
-        <h4 className='title_single_product mb-2'>You might be interested in</h4>
+        <h4 className='title_single_product mb-2'>
+          You might be interested in
+        </h4>
         <Swiper
           modules={[Navigation, Pagination]}
           slidesPerView={2}
           pagination={true}
           navigation={true}
-          spaceBetween={15}
+          spaceBetween={13}
           breakpoints={{
             // when window width is >= 640px
             640: {
-              slidesPerView: 3,
+              slidesPerView: 3
             },
             // when window width is >= 768px
             768: {
-              slidesPerView: 4,
+              slidesPerView: 4
             },
             // when window width is >= 960px
             960: {
@@ -171,6 +173,7 @@ const Product = (product) => {
         >
           {products
             .filter((product) => product.category === category)
+            .slice(0, 8)
             .map((product) => (
               <SwiperSlide key={product.id}>
                 <ProductSlide {...product} />

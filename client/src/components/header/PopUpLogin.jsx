@@ -7,13 +7,26 @@ import { Button } from '../ui/button'
 import { PopUpSignUp } from './PopUpSignUp'
 import { useSelector, useDispatch } from 'react-redux'
 import { setOpenLogin, setOpenSingUp } from '@/redux/products/toggleSlice'
+import { useRef, useEffect } from 'react'
 
 export const PopUpLogin = () => {
   const dispatch = useDispatch()
   const { isLoginOpen } = useSelector((state) => state.toggle)
+  const refPopUp = useRef(null)
+
+  useEffect(() => {
+    document.addEventListener('click', handleClickOutSide, true)
+  }, [])
+  
+  const handleClickOutSide = (e) => {
+    if(!refPopUp.current.contains(e.target)) {
+      dispatch(setOpenLogin(false))
+    }
+  }
 
   return (
     <section
+      ref={refPopUp}
       className={`hidden lg:block absolute left-0 right-0 calc_header md:top-52 w-full md:w-[390px] mx-auto bg-card_gray shadow-xl rounded-b-xl lg:rounded-xl px-14 py-14 z-20 transition-all duration-300 ${
         isLoginOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
       }`}
