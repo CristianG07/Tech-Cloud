@@ -16,8 +16,8 @@ export const ProductSlide = (product) => {
       onClick={() => handleClick(id)}
       className='cursor-pointer p-1 mb-7 w-full'
     >
-      <div className='max-w-sm'>
-        <img src={image} alt={name} className='aspect-[46/45] object-fill' />
+      <div>
+        <img src={image} alt={name} className='aspect-[46/45] object-contain' />
       </div>
       <div className='py-4'>
         <div className='flex flex-col justify-between min-h-[84px]'>

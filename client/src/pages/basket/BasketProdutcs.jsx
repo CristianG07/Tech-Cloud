@@ -51,8 +51,8 @@ const BasketProdutcs = ({
               <img src={image} alt='' />
             </div>
 
-            <div className='space-y-3 md:space-y-5 lg:max-w-full'>
-              <p className='text-lg mb-3 md:mb-5 max-w-40'>{name}</p>
+            <div className='space-y-3 lg:max-w-full'>
+              <p className='text-lg mb-3 max-w-40'>{name}</p>
               <div className='flex flex-col'>
                 <span
                   className={`${discounted_price && 'text-red-500'} text-2xl`}

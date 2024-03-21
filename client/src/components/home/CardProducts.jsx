@@ -13,8 +13,8 @@ export const CardProducts = (product) => {
 
   return (
     <div onClick={() => handleClick(id)} className='cursor-pointer'>
-      <div>
-        <img src={image} alt={name} className='aspect-[46/51]' />
+      <div >
+        <img src={image} alt={name} className='aspect-[46/51] object-contain' />
       </div>
       <div className='py-4'>
         <div className='flex flex-col justify-between min-h-[84px]'>

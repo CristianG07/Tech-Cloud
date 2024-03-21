@@ -57,19 +57,19 @@ export const PopupCart = ({
       </DialogHeader>
       <div className='flex flex-col md:flex-row gap-5 md:gap-0 items-center justify-center'>
         <div className='text-black mt-5'>
-          <div className='flex gap-2'>
-            <div className='w-[50%]'>
-              <img src={image} alt='' />
+          <div className='flex gap-4 w-[90%]'>
+            <div className='w-[13rem]'>
+              <img src={image} className='' alt='' />
             </div>
 
-            <div className='space-y-2 md:space-y-5 lg:max-w-full'>
-              <p className='text-sm mb-3 md:mb-5 max-w-40 md:max-w-full'>
+            <div className='space-y-1.5 lg:max-w-full'>
+              <p className='mb-3 md:mb-3 max-w-40 md:max-w-full'>
                 {name}
               </p>
               <div className='flex flex-col'>
-                <span className='text-2xl'>{totalPrice}</span>
+                <span className='text-xl'>{totalPrice}</span>
                 {discounted_price && (
-                  <span className='text-discounted_price text-xl line-through font-semibold'>
+                  <span className='text-discounted_price text-lg line-through font-semibold'>
                     {totalPriceDiscounted}
                   </span>
                 )}
@@ -96,7 +96,7 @@ export const PopupCart = ({
             </div>
           </div>
         </div>
-        <div className='w-full md:w-fit'>
+        <div className='w-full max-w-44'>
           <button onClick={() => navigate(`/basket`)} className='bg-light_secondary py-3 rounded-lg text-white text-base w-full'>
             Buy
           </button>

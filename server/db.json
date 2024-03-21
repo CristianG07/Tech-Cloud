@@ -2274,10 +2274,10 @@
     },
     {
       "id": "LKD97",
-      "name": "Smartphone Apple iPhone 14 128GB",
-      "image": "https://raw.githubusercontent.com/CristianG07/Tech-Cloud/5843bfa13221a0c0d8a476e197579a5c51bfe1ed/client/src/assets/images/smartphone14.svg",
+      "name": "Lenovo IdeaPad 1, 12GB RAM, 512GB",
+      "image": "https://m.media-amazon.com/images/I/61ZCdzmymsL._AC_SL1500_.jpg",
       "category": "laptops",
-      "brand": "Apple",
+      "brand": "Lenovo",
       "rating_star": 0.0,
       "delivery": "Delivery in 3-5 days",
       "guarantee": "Guarantee up to 12 months",
@@ -2308,8 +2308,8 @@
     },
     {
       "id": "tyoO",
-      "name": "Smartphone Apple iPhone 15 516GB",
-      "image": "https://raw.githubusercontent.com/CristianG07/Tech-Cloud/b46adf7e076cc457c4a6406267ff233184794967/client/src/assets/images/smartphone15.svg",
+      "name": "Lenovo Newest 15.6, 1TB PCIe SSD",
+      "image": "https://m.media-amazon.com/images/I/71eRGp52j3L._AC_SL1500_.jpg",
       "category": "laptops",
       "brand": "Lenovo",
       "rating_star": 3.5,
@@ -2342,11 +2342,11 @@
       ]
     },
     {
-      "id": "DM42",
-      "name": "Smartphone Apple iPhone 14 128GB",
-      "image": "https://raw.githubusercontent.com/CristianG07/Tech-Cloud/5843bfa13221a0c0d8a476e197579a5c51bfe1ed/client/src/assets/images/smartphone14.svg",
+      "id": "ZDM42",
+      "name": "Lenovo IdeaPad 1, 12GB RAM, 512GB",
+      "image": "https://m.media-amazon.com/images/I/61ZCdzmymsL._AC_SL1500_.jpg",
       "category": "laptops",
-      "brand": "Dell",
+      "brand": "Lenovo",
       "rating_star": 0.0,
       "delivery": "Delivery in 3-5 days",
       "guarantee": "Guarantee up to 12 months",
@@ -2376,9 +2376,217 @@
       ]
     },
     {
-      "id": "typm59",
-      "name": "Smartphone Apple iPhone 15 516GB",
-      "image": "https://raw.githubusercontent.com/CristianG07/Tech-Cloud/b46adf7e076cc457c4a6406267ff233184794967/client/src/assets/images/smartphone15.svg",
+      "id": "abpm59",
+      "name": "Lenovo Newest 15.6, 1TB PCIe SSD",
+      "image": "https://m.media-amazon.com/images/I/71eRGp52j3L._AC_SL1500_.jpg",
+      "category": "laptops",
+      "brand": "Lenovo",
+      "rating_star": 5.0,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": 5599.00,
+      "discounted_price": 6599.00,
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        { "screen_diagonal": 6.1 },
+        { "memory": "128 GB" },
+        { "camera_megapixels": "12 MP + 12 MP" },
+        { "display_resolution": "2532x1170" },
+        { "network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G" },
+        { "matrix_type": "OLED (Super Retina XDR)" }
+      ]
+    },
+    {
+      "id": "mbz05",
+      "name": "Lenovo IdeaPad 1, 12GB RAM, 512GB",
+      "image": "https://m.media-amazon.com/images/I/61ZCdzmymsL._AC_SL1500_.jpg",
+      "category": "laptops",
+      "brand": "Lenovo",
+      "rating_star": 3.1,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": 5599.00,
+      "discounted_price": 6599.00,
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        { "screen_diagonal": 6.1 },
+        { "memory": "128 GB" },
+        { "camera_megapixels": "12 MP + 12 MP" },
+        { "display_resolution": "2532x1170" },
+        { "network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G" },
+        { "matrix_type": "OLED (Super Retina XDR)" }
+      ]
+    },
+    {
+      "id": "ayg092",
+      "name": "Lenovo Newest 15.6, 1TB PCIe SSD",
+      "image": "https://m.media-amazon.com/images/I/71eRGp52j3L._AC_SL1500_.jpg",
+      "category": "laptops",
+      "brand": "Lenovo",
+      "rating_star": 3.1,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": 5599.00,
+      "discounted_price": 6599.00,
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        { "screen_diagonal": 6.1 },
+        { "memory": "128 GB" },
+        { "camera_megapixels": "12 MP + 12 MP" },
+        { "display_resolution": "2532x1170" },
+        { "network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G" },
+        { "matrix_type": "OLED (Super Retina XDR)" }
+      ]
+    },
+    {
+      "id": "CURTJ",
+      "name": "ASUS Vivobook Go 14 L410",
+      "image": "https://m.media-amazon.com/images/I/71RDNz9y4aL._AC_SL1500_.jpg",
+      "category": "laptops",
+      "brand": "ASUS",
+      "rating_star": 0.0,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": 3424.00,
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        { "screen_diagonal": 6.1 },
+        { "memory": "128 GB" },
+        { "camera_megapixels": "12 MP + 12 MP" },
+        { "display_resolution": "2532x1170" },
+        { "network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G" },
+        { "matrix_type": "OLED (Super Retina XDR)" }
+      ]
+    },
+    {
+      "id": "HGBKM",
+      "name": "Asus Ryzen 5-7520u 16gb, 512gb",
+      "image": "https://m.media-amazon.com/images/I/71ulXSy4nUL._AC_SL1500_.jpg",
+      "category": "laptops",
+      "brand": "ASUS",
+      "rating_star": 3.5,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": 5599.00,
+      "discounted_price": 6599.00,
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        { "screen_diagonal": 6.1 },
+        { "memory": "128 GB" },
+        { "camera_megapixels": "12 MP + 12 MP" },
+        { "display_resolution": "2532x1170" },
+        { "network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G" },
+        { "matrix_type": "OLED (Super Retina XDR)" }
+      ]
+    },
+    {
+      "id": "VBYEG",
+      "name": "ASUS Vivobook Go 14 L410",
+      "image": "https://m.media-amazon.com/images/I/71RDNz9y4aL._AC_SL1500_.jpg",
+      "category": "laptops",
+      "brand": "ASUS",
+      "rating_star": 0.0,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": 3424.00,
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        { "screen_diagonal": 6.1 },
+        { "memory": "128 GB" },
+        { "camera_megapixels": "12 MP + 12 MP" },
+        { "display_resolution": "2532x1170" },
+        { "network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G" },
+        { "matrix_type": "OLED (Super Retina XDR)" }
+      ]
+    },
+    {
+      "id": "AOFE",
+      "name": "Asus Ryzen 5-7520u 16gb, 512gb",
+      "image": "https://m.media-amazon.com/images/I/71ulXSy4nUL._AC_SL1500_.jpg",
       "category": "laptops",
       "brand": "ASUS",
       "rating_star": 5.0,
@@ -2411,11 +2619,11 @@
       ]
     },
     {
-      "id": "mbz05",
-      "name": "Smartphone Apple iPhone 15 516GB",
-      "image": "https://raw.githubusercontent.com/CristianG07/Tech-Cloud/b46adf7e076cc457c4a6406267ff233184794967/client/src/assets/images/smartphone15.svg",
+      "id": "NBUSG",
+      "name": "ASUS Vivobook Go 14 L410",
+      "image": "https://m.media-amazon.com/images/I/71RDNz9y4aL._AC_SL1500_.jpg",
       "category": "laptops",
-      "brand": "Xiaomi",
+      "brand": "ASUS",
       "rating_star": 3.1,
       "delivery": "Delivery in 3-5 days",
       "guarantee": "Guarantee up to 12 months",
@@ -2446,9 +2654,390 @@
       ]
     },
     {
-      "id": "wyg092",
-      "name": "Smartphone Apple iPhone 15 516GB",
-      "image": "https://raw.githubusercontent.com/CristianG07/Tech-Cloud/b46adf7e076cc457c4a6406267ff233184794967/client/src/assets/images/smartphone15.svg",
+      "id": "NRUIE",
+      "name": "Asus Ryzen 5-7520u 16gb, 512gb",
+      "image": "https://m.media-amazon.com/images/I/71ulXSy4nUL._AC_SL1500_.jpg",
+      "category": "laptops",
+      "brand": "ASUS",
+      "rating_star": 3.1,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": 5599.00,
+      "discounted_price": 6599.00,
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        { "screen_diagonal": 6.1 },
+        { "memory": "128 GB" },
+        { "camera_megapixels": "12 MP + 12 MP" },
+        { "display_resolution": "2532x1170" },
+        { "network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G" },
+        { "matrix_type": "OLED (Super Retina XDR)" }
+      ]
+    },
+    {
+      "id": "EMKBV",
+      "name": "Apple 2024 MacBook Air 13-inch Laptop",
+      "image": "https://m.media-amazon.com/images/I/71YG+VrvrTL._AC_SL1500_.jpg",
+      "category": "laptops",
+      "brand": "Apple",
+      "rating_star": 0.0,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": 3424.00,
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        { "screen_diagonal": 6.1 },
+        { "memory": "128 GB" },
+        { "camera_megapixels": "12 MP + 12 MP" },
+        { "display_resolution": "2532x1170" },
+        { "network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G" },
+        { "matrix_type": "OLED (Super Retina XDR)" }
+      ]
+    },
+    {
+      "id": "IURKK",
+      "name": "Apple 2022 13 MacBook Air M2",
+      "image": "https://m.media-amazon.com/images/I/71f5Eu5lJSL._AC_SL1500_.jpg",
+      "category": "laptops",
+      "brand": "Apple",
+      "rating_star": 3.5,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": 5599.00,
+      "discounted_price": 6599.00,
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        { "screen_diagonal": 6.1 },
+        { "memory": "128 GB" },
+        { "camera_megapixels": "12 MP + 12 MP" },
+        { "display_resolution": "2532x1170" },
+        { "network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G" },
+        { "matrix_type": "OLED (Super Retina XDR)" }
+      ]
+    },
+    {
+      "id": "NDYEW",
+      "name": "Apple 2024 MacBook Air 13-inch Laptop",
+      "image": "https://m.media-amazon.com/images/I/71YG+VrvrTL._AC_SL1500_.jpg",
+      "category": "laptops",
+      "brand": "Apple",
+      "rating_star": 0.0,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": 3424.00,
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        { "screen_diagonal": 6.1 },
+        { "memory": "128 GB" },
+        { "camera_megapixels": "12 MP + 12 MP" },
+        { "display_resolution": "2532x1170" },
+        { "network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G" },
+        { "matrix_type": "OLED (Super Retina XDR)" }
+      ]
+    },
+    {
+      "id": "UTHLE",
+      "name": "Apple 2022 13 MacBook Air M2",
+      "image": "https://m.media-amazon.com/images/I/71f5Eu5lJSL._AC_SL1500_.jpg",
+      "category": "laptops",
+      "brand": "Apple",
+      "rating_star": 5.0,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": 5599.00,
+      "discounted_price": 6599.00,
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        { "screen_diagonal": 6.1 },
+        { "memory": "128 GB" },
+        { "camera_megapixels": "12 MP + 12 MP" },
+        { "display_resolution": "2532x1170" },
+        { "network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G" },
+        { "matrix_type": "OLED (Super Retina XDR)" }
+      ]
+    },
+    {
+      "id": "MVIF",
+      "name": "Apple 2024 MacBook Air 13-inch Laptop",
+      "image": "https://m.media-amazon.com/images/I/71YG+VrvrTL._AC_SL1500_.jpg",
+      "category": "laptops",
+      "brand": "Apple",
+      "rating_star": 3.1,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": 5599.00,
+      "discounted_price": 6599.00,
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        { "screen_diagonal": 6.1 },
+        { "memory": "128 GB" },
+        { "camera_megapixels": "12 MP + 12 MP" },
+        { "display_resolution": "2532x1170" },
+        { "network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G" },
+        { "matrix_type": "OLED (Super Retina XDR)" }
+      ]
+    },
+    {
+      "id": "CCFIIE",
+      "name": "Apple 2022 13 MacBook Air M2",
+      "image": "https://m.media-amazon.com/images/I/71f5Eu5lJSL._AC_SL1500_.jpg",
+      "category": "laptops",
+      "brand": "Apple",
+      "rating_star": 3.1,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": 5599.00,
+      "discounted_price": 6599.00,
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        { "screen_diagonal": 6.1 },
+        { "memory": "128 GB" },
+        { "camera_megapixels": "12 MP + 12 MP" },
+        { "display_resolution": "2532x1170" },
+        { "network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G" },
+        { "matrix_type": "OLED (Super Retina XDR)" }
+      ]
+    },
+    {
+      "id": "RRFNS",
+      "name": "Laptop HP Essential 15.6 Anti-Glare HD",
+      "image": "https://m.media-amazon.com/images/I/71fU6P9nByL._AC_SL1500_.jpg",
+      "category": "laptops",
+      "brand": "HP",
+      "rating_star": 0.0,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": 3424.00,
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        { "screen_diagonal": 6.1 },
+        { "memory": "128 GB" },
+        { "camera_megapixels": "12 MP + 12 MP" },
+        { "display_resolution": "2532x1170" },
+        { "network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G" },
+        { "matrix_type": "OLED (Super Retina XDR)" }
+      ]
+    },
+    {
+      "id": "XEIWE",
+      "name": "HP Essential Business Laptop, 15.6",
+      "image": "https://m.media-amazon.com/images/I/71qQqvv2EvL._AC_SL1500_.jpg",
+      "category": "laptops",
+      "brand": "HP",
+      "rating_star": 3.5,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": 5599.00,
+      "discounted_price": 6599.00,
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        { "screen_diagonal": 6.1 },
+        { "memory": "128 GB" },
+        { "camera_megapixels": "12 MP + 12 MP" },
+        { "display_resolution": "2532x1170" },
+        { "network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G" },
+        { "matrix_type": "OLED (Super Retina XDR)" }
+      ]
+    },
+    {
+      "id": "KHOITT",
+      "name": "Laptop HP Essential 15.6 Anti-Glare HD",
+      "image": "https://m.media-amazon.com/images/I/71fU6P9nByL._AC_SL1500_.jpg",
+      "category": "laptops",
+      "brand": "HP",
+      "rating_star": 0.0,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": 3424.00,
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        { "screen_diagonal": 6.1 },
+        { "memory": "128 GB" },
+        { "camera_megapixels": "12 MP + 12 MP" },
+        { "display_resolution": "2532x1170" },
+        { "network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G" },
+        { "matrix_type": "OLED (Super Retina XDR)" }
+      ]
+    },
+    {
+      "id": "ZFGU",
+      "name": "HP Essential Business Laptop, 15.6",
+      "image": "https://m.media-amazon.com/images/I/71qQqvv2EvL._AC_SL1500_.jpg",
+      "category": "laptops",
+      "brand": "HP",
+      "rating_star": 5.0,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": 5599.00,
+      "discounted_price": 6599.00,
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        { "screen_diagonal": 6.1 },
+        { "memory": "128 GB" },
+        { "camera_megapixels": "12 MP + 12 MP" },
+        { "display_resolution": "2532x1170" },
+        { "network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G" },
+        { "matrix_type": "OLED (Super Retina XDR)" }
+      ]
+    },
+    {
+      "id": "LJITV",
+      "name": "Laptop HP Essential 15.6 Anti-Glare HD",
+      "image": "https://m.media-amazon.com/images/I/71fU6P9nByL._AC_SL1500_.jpg",
       "category": "laptops",
       "brand": "HP",
       "rating_star": 3.1,
@@ -2480,6 +3069,252 @@
         { "matrix_type": "OLED (Super Retina XDR)" }
       ]
     },
+    {
+      "id": "PLKIR",
+      "name": "HP Essential Business Laptop, 15.6",
+      "image": "https://m.media-amazon.com/images/I/71qQqvv2EvL._AC_SL1500_.jpg",
+      "category": "laptops",
+      "brand": "HP",
+      "rating_star": 3.1,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": 5599.00,
+      "discounted_price": 6599.00,
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        { "screen_diagonal": 6.1 },
+        { "memory": "128 GB" },
+        { "camera_megapixels": "12 MP + 12 MP" },
+        { "display_resolution": "2532x1170" },
+        { "network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G" },
+        { "matrix_type": "OLED (Super Retina XDR)" }
+      ]
+    },
+
+
+    {
+      "id": "EMITN",
+      "name": "Dell 2023 Newest Inspiron 15 3525 hd",
+      "image": "https://m.media-amazon.com/images/I/61KPrzQ14GL._AC_SL1500_.jpg",
+      "category": "laptops",
+      "brand": "Dell",
+      "rating_star": 0.0,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": 3424.00,
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        { "screen_diagonal": 6.1 },
+        { "memory": "128 GB" },
+        { "camera_megapixels": "12 MP + 12 MP" },
+        { "display_resolution": "2532x1170" },
+        { "network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G" },
+        { "matrix_type": "OLED (Super Retina XDR)" }
+      ]
+    },
+    {
+      "id": "FHGF",
+      "name": "Dell Vostro 14 3400 14 Intel Core i5",
+      "image": "https://m.media-amazon.com/images/I/71-qXqaVE5L._AC_SL1500_.jpg",
+      "category": "laptops",
+      "brand": "Dell",
+      "rating_star": 3.5,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": 3424.00,
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        { "screen_diagonal": 6.1 },
+        { "memory": "128 GB" },
+        { "camera_megapixels": "12 MP + 12 MP" },
+        { "display_resolution": "2532x1170" },
+        { "network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G" },
+        { "matrix_type": "OLED (Super Retina XDR)" }
+      ]
+    },
+    {
+      "id": "SNNKT",
+      "name": "Dell 2023 Newest Inspiron 15 3525 hd",
+      "image": "https://m.media-amazon.com/images/I/61KPrzQ14GL._AC_SL1500_.jpg",
+      "category": "laptops",
+      "brand": "Dell",
+      "rating_star": 0.0,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": 3424.00,
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        { "screen_diagonal": 6.1 },
+        { "memory": "128 GB" },
+        { "camera_megapixels": "12 MP + 12 MP" },
+        { "display_resolution": "2532x1170" },
+        { "network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G" },
+        { "matrix_type": "OLED (Super Retina XDR)" }
+      ]
+    },
+    {
+      "id": "QNDIE",
+      "name": "Dell Vostro 14 3400 14 Intel Core i5",
+      "image": "https://m.media-amazon.com/images/I/71-qXqaVE5L._AC_SL1500_.jpg",
+      "category": "laptops",
+      "brand": "Dell",
+      "rating_star": 5.0,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": 5599.00,
+      "discounted_price": 6599.00,
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        { "screen_diagonal": 6.1 },
+        { "memory": "128 GB" },
+        { "camera_megapixels": "12 MP + 12 MP" },
+        { "display_resolution": "2532x1170" },
+        { "network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G" },
+        { "matrix_type": "OLED (Super Retina XDR)" }
+      ]
+    },
+    {
+      "id": "OIANS",
+      "name": "Dell 2023 Newest Inspiron 15 3525 hd",
+      "image": "https://m.media-amazon.com/images/I/61KPrzQ14GL._AC_SL1500_.jpg",
+      "category": "laptops",
+      "brand": "Dell",
+      "rating_star": 3.1,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": 5599.00,
+      "discounted_price": 6599.00,
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        { "screen_diagonal": 6.1 },
+        { "memory": "128 GB" },
+        { "camera_megapixels": "12 MP + 12 MP" },
+        { "display_resolution": "2532x1170" },
+        { "network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G" },
+        { "matrix_type": "OLED (Super Retina XDR)" }
+      ]
+    },
+    {
+      "id": "PLKIR",
+      "name": "Dell Vostro 14 3400 14 Intel Core i5",
+      "image": "https://m.media-amazon.com/images/I/71-qXqaVE5L._AC_SL1500_.jpg",
+      "category": "laptops",
+      "brand": "Dell",
+      "rating_star": 3.1,
+      "delivery": "Delivery in 3-5 days",
+      "guarantee": "Guarantee up to 12 months",
+      "payment_methods": "Different payment methods",
+      "actual_price": 5599.00,
+      "discounted_price": 6599.00,
+      "description": [
+        {
+          "personalization": "Your photo. Your font. Your widgets. Your iPhone.iOS 16 lets you customize your lock screen in exciting new ways. Layer your photo to make it stand out. Track activity rings. View live updates to your favorite apps."
+        },
+        {
+          "the_lightning_fast": "iPhone 14 has the same super-fast chip as the iPhone 13 Pro.A15 Bionic with 5-core GPU supports all the latest features and makes graphics-intensive games and AR applications super smooth. Renovated internal design provides improved thermal performance."
+        },
+        {
+          "hollywood_home_movies": "Cinema mode automatically shifts focus to the most important object in a scene, just like directors do. Now you can record in 4K resolution at 24 frames per second, the same as in movies."
+        },
+        {
+          "selfies": "Capture the clearest, brightest close-ups and group photos with the new  TrueDepth front camera with autofocus and a larger aperture."
+        }
+      ],
+      "product_details": [
+        { "screen_diagonal": 6.1 },
+        { "memory": "128 GB" },
+        { "camera_megapixels": "12 MP + 12 MP" },
+        { "display_resolution": "2532x1170" },
+        { "network_standard": "2G (GPRS/EDGE) 3G (WCDMA/UMTS) 4G (LTE) 5G" },
+        { "matrix_type": "OLED (Super Retina XDR)" }
+      ]
+    },
+
+
     {
       "id": "MDOR99",
       "name": "Smartphone Apple iPhone 15 516GB",
