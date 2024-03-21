@@ -208,8 +208,8 @@
     },
     {
       "id": "xMHCaZl",
-      "name": "Samsung Galaxy A53",
-      "image": "https://raw.githubusercontent.com/CristianG07/Tech-Cloud/master/client/src/assets/products/Samsung-Galaxy-A53.png",
+      "name": "Dual Samsung Galaxy A53",
+      "image": "https://m.media-amazon.com/images/I/41iAuw55ixL._AC_.jpg",
       "category": "mobile phones",
       "brand": "Samsung",
       "rating_star": 3.7,
@@ -278,8 +278,8 @@
     },
     {
       "id": "dAAWf_e",
-      "name": "Samsung Galaxy A53",
-      "image": "https://raw.githubusercontent.com/CristianG07/Tech-Cloud/master/client/src/assets/products/Samsung-Galaxy-A53.png",
+      "name": "Dual Samsung Galaxy A53",
+      "image": "https://m.media-amazon.com/images/I/41iAuw55ixL._AC_.jpg",
       "category": "mobile phones",
       "brand": "Samsung",
       "rating_star": 4.3,
@@ -347,8 +347,8 @@
     },
     {
       "id": "SGOD",
-      "name": "Samsung Galaxy A53",
-      "image": "https://raw.githubusercontent.com/CristianG07/Tech-Cloud/master/client/src/assets/products/Samsung-Galaxy-A53.png",
+      "name": "Dual Samsung Galaxy A53",
+      "image": "https://m.media-amazon.com/images/I/41iAuw55ixL._AC_.jpg",
       "category": "mobile phones",
       "brand": "Samsung",
       "rating_star": 4.4,
@@ -1031,7 +1031,6 @@
         { "matrix_type": "OLED (Super Retina XDR)" }
       ]
     },
-
     {
       "id": "DGKJRI",
       "name": "Oppo A57 128GB Negro",
@@ -1068,8 +1067,8 @@
     },
     {
       "id": "CXNHIO",
-      "name": "oppo r11 4GB 128GB",
-      "image": "https://raw.githubusercontent.com/CristianG07/Tech-Cloud/master/client/src/assets/products/oppo-r11.png",
+      "name": "OPPO Find X3 Lite - SIM 128GB + 8GB",
+      "image": "https://m.media-amazon.com/images/I/81vM8xGQ4ZL._AC_SL1500_.jpg",
       "category": "mobile phones",
       "brand": "Oppo",
       "rating_star": 2.5,
@@ -1137,8 +1136,8 @@
     },
     {
       "id": "MVCNB",
-      "name": "oppo r11 4GB 128GB",
-      "image": "https://raw.githubusercontent.com/CristianG07/Tech-Cloud/master/client/src/assets/products/oppo-r11.png",
+      "name": "OPPO Find X3 Lite - SIM 128GB + 8GB",
+      "image": "https://m.media-amazon.com/images/I/81vM8xGQ4ZL._AC_SL1500_.jpg",
       "category": "mobile phones",
       "brand": "Oppo",
       "rating_star": 5.0,
@@ -1206,8 +1205,8 @@
     },
     {
       "id": "BXJHZ",
-      "name": "oppo r11 4GB 128GB",
-      "image": "https://raw.githubusercontent.com/CristianG07/Tech-Cloud/master/client/src/assets/products/oppo-r11.png",
+      "name": "OPPO Find X3 Lite - SIM 128GB + 8GB",
+      "image": "https://m.media-amazon.com/images/I/81vM8xGQ4ZL._AC_SL1500_.jpg",
       "category": "mobile phones",
       "brand": "Oppo",
       "rating_star": 2.0,
@@ -2690,7 +2689,7 @@
     },
     {
       "id": "EMKBV",
-      "name": "Apple 2024 MacBook Air 13-inch Laptop",
+      "name": "Apple 2024 MacBook Air 13",
       "image": "https://m.media-amazon.com/images/I/71YG+VrvrTL._AC_SL1500_.jpg",
       "category": "laptops",
       "brand": "Apple",
@@ -2759,7 +2758,7 @@
     },
     {
       "id": "NDYEW",
-      "name": "Apple 2024 MacBook Air 13-inch Laptop",
+      "name": "Apple 2024 MacBook Air 13",
       "image": "https://m.media-amazon.com/images/I/71YG+VrvrTL._AC_SL1500_.jpg",
       "category": "laptops",
       "brand": "Apple",
@@ -2828,7 +2827,7 @@
     },
     {
       "id": "MVIF",
-      "name": "Apple 2024 MacBook Air 13-inch Laptop",
+      "name": "Apple 2024 MacBook Air 13",
       "image": "https://m.media-amazon.com/images/I/71YG+VrvrTL._AC_SL1500_.jpg",
       "category": "laptops",
       "brand": "Apple",
@@ -2932,7 +2931,7 @@
     },
     {
       "id": "XEIWE",
-      "name": "HP Essential Business Laptop, 15.6",
+      "name": "HP Essential Business Laptop",
       "image": "https://m.media-amazon.com/images/I/71qQqvv2EvL._AC_SL1500_.jpg",
       "category": "laptops",
       "brand": "HP",
@@ -3001,7 +3000,7 @@
     },
     {
       "id": "ZFGU",
-      "name": "HP Essential Business Laptop, 15.6",
+      "name": "HP Essential Business Laptop",
       "image": "https://m.media-amazon.com/images/I/71qQqvv2EvL._AC_SL1500_.jpg",
       "category": "laptops",
       "brand": "HP",
@@ -3071,7 +3070,7 @@
     },
     {
       "id": "PLKIR",
-      "name": "HP Essential Business Laptop, 15.6",
+      "name": "HP Essential Business Laptop",
       "image": "https://m.media-amazon.com/images/I/71qQqvv2EvL._AC_SL1500_.jpg",
       "category": "laptops",
       "brand": "HP",

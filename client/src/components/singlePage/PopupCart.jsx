@@ -46,7 +46,7 @@ export const PopupCart = ({
   return (
     <>
       <DialogHeader>
-        <DialogTitle className='flex justify-between items-center pr-2 md:px-6 text-2xl'>
+        <DialogTitle className='flex justify-between items-center pr-10 md:px-6 text-2xl'>
           Your card
           <DialogClose>
             <div className='text-text_secondary'>
@@ -96,7 +96,7 @@ export const PopupCart = ({
             </div>
           </div>
         </div>
-        <div className='w-full max-w-44'>
+        <div className='w-fit md:w-full max-w-44'>
           <button onClick={() => navigate(`/basket`)} className='bg-light_secondary py-3 rounded-lg text-white text-base w-full'>
             Buy
           </button>
