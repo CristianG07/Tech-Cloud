@@ -26,14 +26,14 @@ export const MenuIcons = () => {
 
   return (
     <div className='flex items-center gap-4 lg:gap-6'>
-      <button className='show_lg w-8 relative'>
+      <Link to='/favorite' className='show_lg w-8 relative'>
         <img src={heart_light} alt='heart_light_icon' />
         {favorites.length > 0 && (
           <span className='absolute text-center font-sans text-sm font-medium -top-3 -right-2 bg-dark_primary h-6 w-6 flex items-center justify-center text-white rounded-full'>
             {favorites.length}
           </span>
         )}
-      </button>
+      </Link>
       <Link to='/basket' className='w-8 relative'>
         <img src={cart} alt='cart_icon' />
         {totalItems.length > 0 && (

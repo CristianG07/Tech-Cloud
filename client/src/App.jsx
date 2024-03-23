@@ -9,6 +9,7 @@ import Basket from './pages/basket/Basket'
 import Profile from './pages/profile/Profile'
 import BrandPage from './pages/brand/BrandPage'
 import SearchPage from './pages/search/SearchPage'
+import Favorite from './pages/favorite/Favorite'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route element={<Layout />} >
           <Route path='/' element={<Home />} />
           <Route path='/basket' element={<Basket />} />
+          <Route path='/favorite' element={<Favorite />} />
           <Route path='/profile' element={<Profile />} />
           <Route path='/search/:searchName' element={<SearchPage />} />
           <Route path="/category/:categoryName" element={<CategoryPage />} />

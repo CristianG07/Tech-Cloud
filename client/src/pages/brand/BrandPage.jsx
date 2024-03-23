@@ -35,7 +35,7 @@ const BrandPage = () => {
           <div className={`${products.length === 0 ? '' : 'content_products'}`}>
             {products.length === 0 ? (
               <div className='flex items-center justify-center h-[50vh] text-4xl text-accent_primary'>
-                <p>Product not found</p>
+                <p>There are no product</p>
               </div>
             ) : (
               products.map((product) => (

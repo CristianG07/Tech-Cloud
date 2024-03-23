@@ -80,14 +80,14 @@ export const cualities_footer = [
 
 export const sidebar = [
   { text: 'Help Center', icon: information_circle_sidebar, link: '/profile' },
-  { text: 'Wish list', icon: heart_light_sidebar, link: '/' },
+  { text: 'Wish list', icon: heart_light_sidebar, link: '/favorite' },
   { text: 'Bucket', icon: cart_sidebar, link: '/basket' }
 ]
 
 export const profile = [
   { text: 'My orders', icon: tabler_list, link: '/' },
   { text: 'My basket', icon: shopping_outline, link: '/basket' },
-  { text: 'Wish list', icon: heart_profile, link: '/' },
+  { text: 'Wish list', icon: heart_profile, link: '/favorite' },
   { text: 'Viewed products', icon: eye, link: '/' }
 ]
 
