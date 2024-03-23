@@ -16,7 +16,6 @@ const BasketProdutcs = ({
   const { data: cart } = useSelector((state) => state.cart)
   const [qty, setQty] = useState(1)
   const totalPrice = FormatPrice(actual_price * qty)
-  const noItemCart = cart.length === 0
   const totalPriceDiscounted = FormatPrice(discounted_price * qty)
 
   useEffect(() => {
@@ -40,52 +39,46 @@ const BasketProdutcs = ({
 
   return (
     <div className='mb-7'>
-      {noItemCart ? (
-        <div>
-          <h5>there are no products</h5>
-        </div>
-      ) : (
-        <div className='text-black'>
-          <div className='flex gap-4'>
-            <div className='w-[40%]'>
-              <img src={image} alt='' />
-            </div>
+      <div className='text-black'>
+        <div className='flex gap-4'>
+          <div className='w-[40%]'>
+            <img src={image} alt='' />
+          </div>
 
-            <div className='space-y-3 lg:max-w-full'>
-              <p className='text-lg mb-3 max-w-40'>{name}</p>
-              <div className='flex flex-col'>
-                <span
-                  className={`${discounted_price && 'text-red-500'} text-2xl`}
-                >
-                  {totalPrice}
-                </span>
-                {discounted_price && (
-                  <span className='text-discounted_price text-xl line-through font-semibold'>
-                    {totalPriceDiscounted}
-                  </span>
-                )}
-              </div>
-              <div className='flex text-lg items-center gap-2'>
-                <button type='button' onClick={() => decreaseQty()}>
-                  <CgMathMinus />
-                </button>
-                <span className='px-3 py-1 bg-white text-base border rounded-lg shadow-sm'>
-                  {qty}
-                </span>
-                <button type='button' onClick={() => increaseQty()}>
-                  <GoPlus />
-                </button>
-              </div>
-              <button
-                onClick={() => dispatch(removeFromCart(id))}
-                className='text-sm text-light_secondary underline'
+          <div className='space-y-3 lg:max-w-full'>
+            <p className='text-lg mb-3 max-w-40'>{name}</p>
+            <div className='flex flex-col'>
+              <span
+                className={`${discounted_price && 'text-red-500'} text-2xl`}
               >
-                Delete item
+                {totalPrice}
+              </span>
+              {discounted_price && (
+                <span className='text-discounted_price text-xl line-through font-semibold'>
+                  {totalPriceDiscounted}
+                </span>
+              )}
+            </div>
+            <div className='flex text-lg items-center gap-2'>
+              <button type='button' onClick={() => decreaseQty()}>
+                <CgMathMinus />
+              </button>
+              <span className='px-3 py-1 bg-white text-base border rounded-lg shadow-sm'>
+                {qty}
+              </span>
+              <button type='button' onClick={() => increaseQty()}>
+                <GoPlus />
               </button>
             </div>
+            <button
+              onClick={() => dispatch(removeFromCart(id))}
+              className='text-sm text-light_secondary underline'
+            >
+              Delete item
+            </button>
           </div>
         </div>
-      )}
+      </div>
     </div>
   )
 }

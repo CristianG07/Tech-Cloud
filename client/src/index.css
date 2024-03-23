@@ -122,7 +122,7 @@ body {
     @apply px-6 flex items-center h-full hover:bg-dark transition-all duration-700 text-lg lg:text-xl text-nowrap
   }
   .container_products {
-    @apply w-[90%] lg:w-[77%] max-w-7xl mx-auto pb-20 pt-5 lg:pt-12 min-h-screen
+    @apply w-[90%] lg:w-[77%] max-w-7xl mx-auto pb-20 pt-5 lg:pt-12 lg:min-h-screen
   }
   .content_products {
     @apply grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8
