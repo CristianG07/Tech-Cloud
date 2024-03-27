@@ -1,14 +1,27 @@
 import { useSelector, useDispatch } from 'react-redux'
 import { CategoryList } from "@/components/home/CategoryList"
-import { InputSelect } from "@/components/singlePage/InputSelect"
 import { Link, useParams } from "react-router-dom"
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { fetchProductsBySearch } from '@/redux/products/searchSlice'
+import { Select } from '../../components/ui/Select'
 
 const SearchPage = () => {
   const dispatch = useDispatch()
   const { searchName } = useParams()
   const { data: products } = useSelector((state) => state.search)
+  const [selectedOption, setSelectedOption] = useState('Sort by popularity');
+  const [filteredProducts, setFilteredProducts] = useState(products)
+
+  const handleSelectChange = (option) => {
+    setSelectedOption(option)
+    if (option === 'Alphabetically') {
+      const sortedProducts = products.slice().sort((a, b) => a.name.localeCompare(b.name));
+      setFilteredProducts(sortedProducts);
+    } else if (option === 'Price') {
+      const sortedProducts = products.slice().sort((a, b) => a.actual_price - b.actual_price);
+      setFilteredProducts(sortedProducts);
+    }
+  }
 
   useEffect(() => {
     if (searchName) {
@@ -28,7 +41,7 @@ const SearchPage = () => {
             <Link to='/'>Home</Link> /<span>{searchName}</span>
           </div>
           <div className='hidden md:block'>
-            <InputSelect />
+            <Select selectedOption={selectedOption} onSelectChange={handleSelectChange} />
           </div>
         </div>
         <div className=''>
@@ -38,7 +51,7 @@ const SearchPage = () => {
                 <p>Product not found</p>
               </div>
             ) : (
-              products.map((product) => (
+              filteredProducts.map((product) => (
                 <CategoryList key={product.id} {...product} />
               ))
             )}

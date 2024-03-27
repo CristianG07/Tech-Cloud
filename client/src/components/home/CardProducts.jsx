@@ -28,7 +28,7 @@ export const CardProducts = (product) => {
               {FormatPrice(actual_price)}
             </span>
             <div className='flex gap-2 mr-2'>
-              <div>
+              <div >
                 <ButtonCart {...product} />
               </div>
               <div>
@@ -45,6 +45,7 @@ export const CardProducts = (product) => {
           )}
         </div>
       </div>
+      
     </div>
   )
 }

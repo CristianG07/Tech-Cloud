@@ -1,13 +1,13 @@
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import BasketProdutcs from './BasketProdutcs'
 import { Label } from '@/components/ui/label'
 import { InputForm } from '@/components/ui/InputForm'
 import { Button } from '@/components/ui/button'
-import { InputSelect } from '@/components/singlePage/InputSelect'
 import { Checkbox } from '@/components/ui/checkbox'
-import { useEffect } from 'react'
 import { FormatPrice } from '@/utils/FormatPrice'
+import { Select } from '../../components/ui/Select'
 
 const Basket = () => {
   const { data: products } = useSelector((state) => state.cart)
@@ -149,7 +149,7 @@ const Basket = () => {
                     <p>free</p>
                   </div>
                   <div className='flex flex-col sm:flex-row gap-2 lg:items-center w-[80%] sm:w-full mx-auto'>
-                    <InputSelect />
+                    <Select />
                     <Button
                       type='submit'
                       className=' rounded-xl bg-accent_primary w-full sm:w-fit px-10 sm:px-5 py-3.5 text-base sm:text-sm font-semibold leading-6 text-white shadow-sm hover:bg-accent_primary/85 focus-visible:outline focus-visible:outline-2 duration-500'

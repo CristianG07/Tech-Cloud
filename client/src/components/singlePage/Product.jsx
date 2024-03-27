@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 // components
 import { ImageSlide } from './ImageSlide'
 import { carbon_security, light_payments, light_truck } from '@/assets/images'
-import { InputSelect } from './InputSelect'
 import { Description } from './Description'
 import { Details } from './Details'
 import { StarRating } from './StarRating'
@@ -20,6 +19,7 @@ import { SlidePrevButton } from './SlidePrevButton'
 import { SlideNextButton } from './SlideNextButton'
 import { ProductSlide } from './ProductSlide'
 import { FormatPrice } from '@/utils/FormatPrice'
+import { Select } from '../ui/Select'
 
 const Product = (product) => {
   const {
@@ -36,9 +36,23 @@ const Product = (product) => {
     product_details,
     rating_star
   } = product
+  
   const dispatch = useDispatch()
   const [qty, setQty] = useState(1)
   const { data: products } = useSelector((state) => state.product)
+  const [selectedOption, setSelectedOption] = useState('Sort by popularity');
+  const [filteredProducts, setFilteredProducts] = useState(products)
+
+  const handleSelectChange = (option) => {
+    setSelectedOption(option)
+    if (option === 'Alphabetically') {
+      const sortedProducts = products.slice().sort((a, b) => a.name.localeCompare(b.name));
+      setFilteredProducts(sortedProducts);
+    } else if (option === 'Price') {
+      const sortedProducts = products.slice().sort((a, b) => a.actual_price - b.actual_price);
+      setFilteredProducts(sortedProducts);
+    }
+  }
 
   const addToCartHandler = () => {
     let newTotalPrice = actual_price
@@ -64,7 +78,7 @@ const Product = (product) => {
             <span>{brand}</span>
           </div>
           <div className='hidden md:block'>
-            <InputSelect />
+            <Select selectedOption={selectedOption} onSelectChange={handleSelectChange} />
           </div>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 items-center gap-5 md:gap-10'>
@@ -171,7 +185,7 @@ const Product = (product) => {
           loop={true}
           speed={700}
         >
-          {products
+          {filteredProducts
             .filter((product) => product.category === category)
             .slice(0, 8)
             .map((product) => (

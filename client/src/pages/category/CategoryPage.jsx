@@ -1,12 +1,25 @@
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import { CategoryList } from '@/components/home/CategoryList'
-import { InputSelect } from '@/components/singlePage/InputSelect'
 import { Link, useParams } from 'react-router-dom'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import { Select } from '../../components/ui/Select'
 
 const CategoryPage = () => {
   const { categoryName } = useParams()
   const { data: products } = useSelector((state) => state.category)
+  const [selectedOption, setSelectedOption] = useState('Sort by popularity');
+  const [filteredProducts, setFilteredProducts] = useState(products)
+
+  const handleSelectChange = (option) => {
+    setSelectedOption(option)
+    if (option === 'Alphabetically') {
+      const sortedProducts = products.slice().sort((a, b) => a.name.localeCompare(b.name));
+      setFilteredProducts(sortedProducts);
+    } else if (option === 'Price') {
+      const sortedProducts = products.slice().sort((a, b) => a.actual_price - b.actual_price);
+      setFilteredProducts(sortedProducts);
+    }
+  }
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -20,12 +33,12 @@ const CategoryPage = () => {
             <Link to='/'>Home</Link> /<span>{categoryName}</span>
           </div>
           <div className='hidden md:block'>
-            <InputSelect />
+            <Select selectedOption={selectedOption} onSelectChange={handleSelectChange} />
           </div>
         </div>
-        <div className=''>
+        <div>
           <div className='content_products'>
-            {products.map((product) => (
+            {filteredProducts.map((product) => (
               <CategoryList key={product.id} {...product} />
             ))}
           </div>

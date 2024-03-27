@@ -1,10 +1,37 @@
 import { CategoryList } from '@/components/home/CategoryList'
-import { InputSelect } from '@/components/singlePage/InputSelect'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
+import { Select } from '../../components/ui/Select'
+import { useEffect, useState } from 'react'
 
 const Favorite = () => {
   const { favorites } = useSelector((state) => state.favorite)
+  const [selectedOption, setSelectedOption] = useState('Sort by popularity');
+  const [filteredProducts, setFilteredProducts] = useState(favorites)
+
+  const handleSelectChange = (option) => {
+    setSelectedOption(option)
+    filterProducts(option);
+  }
+
+  const filterProducts  = (option) => {
+    setSelectedOption(option)
+    if (option === 'Alphabetically') {
+      const sortedProducts = favorites.slice().sort((a, b) => a.name.localeCompare(b.name));
+      setFilteredProducts(sortedProducts);
+    } else if (option === 'Price') {
+      const sortedProducts = favorites.slice().sort((a, b) => a.actual_price - b.actual_price);
+      setFilteredProducts(sortedProducts);
+    }
+  }
+
+  useEffect(() => {
+    filterProducts(selectedOption);
+  }, [favorites]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <section className='container_products'>
@@ -14,7 +41,7 @@ const Favorite = () => {
             <Link to='/'>Home</Link> /<span>Favorites</span>
           </div>
           <div className='hidden md:block'>
-            <InputSelect />
+            <Select selectedOption={selectedOption} onSelectChange={handleSelectChange} />
           </div>
         </div>
         <div className=''>
@@ -24,7 +51,7 @@ const Favorite = () => {
                 <p>There are no product</p>
               </div>
             ) : (
-              favorites.map((product) => (
+              filteredProducts.map((product) => (
                 <CategoryList key={product.id} {...product} />
               ))
             )}

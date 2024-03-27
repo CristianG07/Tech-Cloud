@@ -4,6 +4,7 @@ import { CgMathMinus } from 'react-icons/cg'
 import { removeFromCart, toggleCartQty } from '@/redux/products/cartSlice'
 import { useSelector, useDispatch } from 'react-redux'
 import { FormatPrice } from '@/utils/FormatPrice'
+import toast from 'react-hot-toast'
 
 const BasketProdutcs = ({
   id,
@@ -71,7 +72,10 @@ const BasketProdutcs = ({
               </button>
             </div>
             <button
-              onClick={() => dispatch(removeFromCart(id))}
+              onClick={() => {
+                dispatch(removeFromCart(id))
+                toast.error('removed from cart')
+              }}
               className='text-sm text-light_secondary underline'
             >
               Delete item

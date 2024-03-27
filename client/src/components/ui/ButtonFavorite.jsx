@@ -2,6 +2,8 @@ import { HeartCard } from '../icons/HeartCard'
 // redux
 import { useSelector, useDispatch } from 'react-redux'
 import { addFavorite, removeFavorite } from '@/redux/products/favoriteSlice'
+import toast from 'react-hot-toast'
+
 
 export const ButtonFavorite = (product) => {
   const dispatch = useDispatch()
@@ -12,8 +14,10 @@ export const ButtonFavorite = (product) => {
     event.stopPropagation()
     if (isFavorite) {
       dispatch(removeFavorite(product.id))
+      toast.error('removed from favorites')
     } else {
       dispatch(addFavorite(product))
+      toast.success('added to favorites')
     }
   }
 

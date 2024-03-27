@@ -18,7 +18,7 @@ export const SideBar = () => {
     <div
       className={`absolute lg:hidden z-20 rounded-b-2xl shadow-lg ${
         isSidebarOpen ? '' : 'translate-x-full'
-      } calc_header w-[95%] right-0 max-w-full sm:max-w-[400px] duration-200 ease-linear`}
+      } calc_header w-full right-0 max-w-full sm:max-w-[400px] duration-200 ease-linear`}
     >
       <div className='relative flex justify-center items-center gap-6 bg-dark_primary px-12 py-5 text-white'>
         <div className='w-10 h-10'>

@@ -3,6 +3,7 @@ import { CartCard } from '../icons/CartCard'
 import { useSelector, useDispatch } from 'react-redux'
 import { addToCart, removeFromCart } from '@/redux/products/cartSlice'
 import { useState } from 'react'
+import toast from 'react-hot-toast'
 
 export const ButtonCart = (product) => {
   const dispatch = useDispatch()
@@ -14,24 +15,30 @@ export const ButtonCart = (product) => {
     event.stopPropagation()
     if (isAddToCart) {
       dispatch(removeFromCart(product.id))
+      toast.error('removed from cart')
     } else {
       let newTotalPrice = product.actual_price
       const tempProduct = {
         ...product,
         quantity: qty,
         newTotalPrice
-      };
+      }
       dispatch(addToCart(tempProduct))
+      toast.success('added to cart')
     }
   }
 
   return (
-    <button className='' onClick={toggleFavoriteHandler}>
-      <CartCard
-        className={`${
-          isAddToCart ? 'fill-light_secondary' : 'lg:hover:fill-light_secondary'
-        }`}
-      />
-    </button>
+    <>
+      <button className='' onClick={toggleFavoriteHandler}>
+        <CartCard
+          className={`${
+            isAddToCart
+              ? 'fill-light_secondary'
+              : 'lg:hover:fill-light_secondary'
+          }`}
+        />
+      </button>
+    </>
   )
 }
